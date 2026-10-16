@@ -12,6 +12,7 @@ public class PlayerPrototype : MonoBehaviour
 
     private Rigidbody rb;
     private Vector3 moveInput;
+    private Transform camTransform;
 
     // Animator Parameter Hashes
     private static readonly int SpeedHash = Animator.StringToHash("Speed");
@@ -24,11 +25,21 @@ public class PlayerPrototype : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 
         if (animator == null)
         {
             animator = GetComponentInChildren<Animator>();
+        }
+
+        // Cache the main camera's transform for isometric movement calculations
+        if (Camera.main != null)
+        {
+            camTransform = Camera.main.transform;
+        }
+        else
+        {
+            Debug.LogWarning("[PlayerPrototype] Main Camera not found! Movement will default to world space.");
         }
 
         CheckAnimatorParameters();
@@ -38,7 +49,6 @@ public class PlayerPrototype : MonoBehaviour
     {
         if (animator == null || animator.runtimeAnimatorController == null) return;
 
-        // Verify parameters exist before trying to set them at runtime
         foreach (AnimatorControllerParameter param in animator.parameters)
         {
             if (param.nameHash == IsMovingHash) hasIsMovingParam = true;
@@ -79,8 +89,28 @@ public class PlayerPrototype : MonoBehaviour
         if (keyboard.dKey.isPressed) horizontal += 1f;
         if (keyboard.aKey.isPressed) horizontal -= 1f;
 
-        moveInput = new Vector3(horizontal, 0f, vertical);
+        if (camTransform != null)
+        {
+            // Get camera forward and right vectors, then flatten them on the XZ plane (y = 0)
+            Vector3 camForward = camTransform.forward;
+            Vector3 camRight = camTransform.right;
 
+            camForward.y = 0f;
+            camRight.y = 0f;
+
+            camForward.Normalize();
+            camRight.Normalize();
+
+            // Calculate movement direction relative to the camera view
+            moveInput = (camForward * vertical) + (camRight * horizontal);
+        }
+        else
+        {
+            // Fallback if camera is missing
+            moveInput = new Vector3(horizontal, 0f, vertical);
+        }
+
+        // Normalize if input magnitude exceeds 1 to prevent faster diagonal movement
         if (moveInput.sqrMagnitude > 1f)
         {
             moveInput.Normalize();
@@ -105,7 +135,6 @@ public class PlayerPrototype : MonoBehaviour
         bool isMoving = moveInput.sqrMagnitude > 0.01f;
         float currentSpeed = isMoving ? moveSpeed : 0f;
 
-        // Only set parameters if they actually exist in the Animator Controller
         if (hasIsMovingParam) animator.SetBool(IsMovingHash, isMoving);
         if (hasSpeedParam) animator.SetFloat(SpeedHash, currentSpeed);
     }
