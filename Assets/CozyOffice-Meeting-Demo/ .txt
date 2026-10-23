@@ -1,0 +1,49 @@
+COZY OFFICE - MEETING DEMO
+For your existing Unity 6000.4.10f1 project.
+
+INSTALL ON MAC
+1. Stop Play mode and save your current scene.
+2. Unzip this download in Finder.
+3. Drag the CozyOfficeDemo folder from the download's Assets folder into
+   the Assets area of Unity's Project window. This is a new folder;
+   you do not need to replace your existing Assets folder.
+4. Wait for Unity to finish compiling.
+5. Open Assets/Scenes/Shaun's Sample Scene.unity.
+6. From Unity's TOP menu bar choose Cozy Office > Build Meeting Demo.
+7. Press Cmd+S to save the populated scene, then press Play.
+8. Click the Game view. WASD moves, E interacts, R resets tasks.
+
+DEMO
+Walk to PRINT & PANIC on the left and press E to collect a printout.
+Walk to YOUR DESK on the right and press E to submit it.
+The objective and messages update on screen.
+
+WHAT THE MENU DOES
+Adds an editable office with a floor, two open walls, windows, two desks,
+chairs, laptops, a printer station, coffee counter and vending machine.
+Furniture and props reference your existing LowPolyOfficeInterior prefabs.
+Floor, walls, window panels and counters use simple colored geometry.
+Creates URP material copies for the demo props, preserving source materials.
+Keeps your existing character, controller, animator and directional light.
+Positions the player and adjusts the existing camera for an elevated view.
+Adds a task component with references already assigned.
+It only runs in Shaun's Sample Scene and refuses to add a duplicate demo.
+It marks the scene as changed; you save it yourself.
+
+GITHUB
+Commit the new Assets/CozyOfficeDemo folder, its .meta file, all generated
+material .meta files, and the changed Shaun's Sample Scene.unity.
+Your co-founder opens the saved scene; they do NOT run the builder again.
+
+VALIDATION / LIMITS
+Project scene, scripts, prefab paths and Unity version were inspected.
+This environment has no Unity Editor, so compilation, visual layout,
+materials, collisions and Play mode still need verification on your Mac.
+The material copies cover opaque furniture, not a full pack conversion.
+No purchased asset files are bundled in this download.
+
+IF SOMETHING GOES WRONG
+If the menu is missing, open Window > General > Console and share the
+first red error. If you see pink props, share a Game view screenshot.
+To reverse immediately after building, use Edit > Undo before other edits.
+The existing ground Plane is retained below the demo floor.
