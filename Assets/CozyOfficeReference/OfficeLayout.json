@@ -1,0 +1,6592 @@
+{
+  "items": [
+    {
+      "name": "Floor slab",
+      "group": "Shell",
+      "position": {
+        "x": 0,
+        "y": -0.2,
+        "z": 0
+      },
+      "size": {
+        "x": 18,
+        "y": 0.2,
+        "z": 12
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": true
+    },
+    {
+      "name": "Carpet tile 00 00",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 01",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 02",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 03",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 04",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 05",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 06",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 07",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 08",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 09",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 10",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 00 11",
+      "group": "Carpet",
+      "position": {
+        "x": -8.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 00",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 01",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 02",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 03",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 04",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 05",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 06",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 07",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 08",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 09",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 10",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 01 11",
+      "group": "Carpet",
+      "position": {
+        "x": -7.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 00",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 01",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 02",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 03",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 04",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 05",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 06",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 07",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 08",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 09",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 10",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 02 11",
+      "group": "Carpet",
+      "position": {
+        "x": -6.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 00",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 01",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 02",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 03",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 04",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 05",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 06",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 07",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 08",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 09",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 10",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 03 11",
+      "group": "Carpet",
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 00",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 01",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 02",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 03",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 04",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 05",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 06",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 07",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 08",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 09",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 10",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 04 11",
+      "group": "Carpet",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 00",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 01",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 02",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 03",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 04",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 05",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 06",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 07",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 08",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 09",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 10",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 05 11",
+      "group": "Carpet",
+      "position": {
+        "x": -3.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 00",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 01",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 02",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 03",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 04",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 05",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 06",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 07",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 08",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 09",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 10",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 06 11",
+      "group": "Carpet",
+      "position": {
+        "x": -2.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 00",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 01",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 02",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 03",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 04",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 05",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 06",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 07",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 08",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 09",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 10",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 07 11",
+      "group": "Carpet",
+      "position": {
+        "x": -1.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 00",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 01",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 02",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 03",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 04",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 05",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 06",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 07",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 08",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 09",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 10",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 08 11",
+      "group": "Carpet",
+      "position": {
+        "x": -0.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 00",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 01",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 02",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 03",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 04",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 05",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 06",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 07",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 08",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 09",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 10",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 09 11",
+      "group": "Carpet",
+      "position": {
+        "x": 0.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 00",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 01",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 02",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 03",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 04",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 05",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 06",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 07",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 08",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 09",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 10",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 10 11",
+      "group": "Carpet",
+      "position": {
+        "x": 1.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 00",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 01",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 02",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 03",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 04",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 05",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 06",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 07",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 08",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 09",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 10",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 11 11",
+      "group": "Carpet",
+      "position": {
+        "x": 2.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 00",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 01",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 02",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 03",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 04",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 05",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 06",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 07",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 08",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 09",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 10",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 12 11",
+      "group": "Carpet",
+      "position": {
+        "x": 3.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 00",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 01",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 02",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 03",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 04",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 05",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 06",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 07",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 08",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 09",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 10",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 13 11",
+      "group": "Carpet",
+      "position": {
+        "x": 4.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 00",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 01",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 02",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 03",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 04",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 05",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 06",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 07",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 08",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 09",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 10",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 14 11",
+      "group": "Carpet",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 00",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 01",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 02",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 03",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 04",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 05",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 06",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 07",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 08",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 09",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 10",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 15 11",
+      "group": "Carpet",
+      "position": {
+        "x": 6.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 00",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 01",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 02",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 03",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 04",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 05",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 06",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 07",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 08",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 09",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 10",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 16 11",
+      "group": "Carpet",
+      "position": {
+        "x": 7.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 00",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": -5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 01",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": -4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 02",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": -3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 03",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": -2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 04",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": -1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 05",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 06",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 07",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": 1.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 08",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 09",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 10",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": 4.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet",
+      "solid": false
+    },
+    {
+      "name": "Carpet tile 17 11",
+      "group": "Carpet",
+      "position": {
+        "x": 8.5,
+        "y": 0,
+        "z": 5.5
+      },
+      "size": {
+        "x": 0.997,
+        "y": 0.008,
+        "z": 0.997
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "carpet2",
+      "solid": false
+    },
+    {
+      "name": "Rear wall",
+      "group": "Shell",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 6
+      },
+      "size": {
+        "x": 18,
+        "y": 2.8,
+        "z": 0.18
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Rear dark cap",
+      "group": "Shell",
+      "position": {
+        "x": 0,
+        "y": 2.8,
+        "z": 6
+      },
+      "size": {
+        "x": 18.05,
+        "y": 0.12,
+        "z": 0.22999999999999998
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Left wall",
+      "group": "Shell",
+      "position": {
+        "x": -9,
+        "y": 0,
+        "z": 0
+      },
+      "size": {
+        "x": 0.18,
+        "y": 2.8,
+        "z": 12
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Left dark cap",
+      "group": "Shell",
+      "position": {
+        "x": -9,
+        "y": 2.8,
+        "z": 0
+      },
+      "size": {
+        "x": 0.22999999999999998,
+        "y": 0.12,
+        "z": 12.05
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Right wall",
+      "group": "Shell",
+      "position": {
+        "x": 9,
+        "y": 0,
+        "z": 0
+      },
+      "size": {
+        "x": 0.18,
+        "y": 2.8,
+        "z": 12
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Right dark cap",
+      "group": "Shell",
+      "position": {
+        "x": 9,
+        "y": 2.8,
+        "z": 0
+      },
+      "size": {
+        "x": 0.22999999999999998,
+        "y": 0.12,
+        "z": 12.05
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Front sill",
+      "group": "Entrance",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -6
+      },
+      "size": {
+        "x": 9,
+        "y": 0.42,
+        "z": 0.18
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Front blue glazing",
+      "group": "Entrance",
+      "position": {
+        "x": -4.5,
+        "y": 0.42,
+        "z": -6
+      },
+      "size": {
+        "x": 9,
+        "y": 0.55,
+        "z": 0.08
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "glass",
+      "solid": true
+    },
+    {
+      "name": "Front cap",
+      "group": "Entrance",
+      "position": {
+        "x": -4.5,
+        "y": 0.97,
+        "z": -6
+      },
+      "size": {
+        "x": 9,
+        "y": 0.13,
+        "z": 0.22
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": -9.0,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": -6.75,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": -4.5,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": -2.25,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": 0.0,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Front sill",
+      "group": "Entrance",
+      "position": {
+        "x": 5.7,
+        "y": 0,
+        "z": -6
+      },
+      "size": {
+        "x": 6.6,
+        "y": 0.42,
+        "z": 0.18
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Front blue glazing",
+      "group": "Entrance",
+      "position": {
+        "x": 5.7,
+        "y": 0.42,
+        "z": -6
+      },
+      "size": {
+        "x": 6.6,
+        "y": 0.55,
+        "z": 0.08
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "glass",
+      "solid": true
+    },
+    {
+      "name": "Front cap",
+      "group": "Entrance",
+      "position": {
+        "x": 5.7,
+        "y": 0.97,
+        "z": -6
+      },
+      "size": {
+        "x": 6.6,
+        "y": 0.13,
+        "z": 0.22
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": 2.4,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": 4.05,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": 5.699999999999999,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": 7.35,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Facade mullion",
+      "group": "Entrance",
+      "position": {
+        "x": 9.0,
+        "y": 0.4,
+        "z": -6
+      },
+      "size": {
+        "x": 0.09,
+        "y": 0.6,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Entry mat",
+      "group": "Entrance",
+      "position": {
+        "x": 1.2,
+        "y": 0.01,
+        "z": -5.1
+      },
+      "size": {
+        "x": 2.4,
+        "y": 0.02,
+        "z": 1.6
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": false
+    },
+    {
+      "name": "Room dividing wall",
+      "group": "Rear rooms",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 3.7
+      },
+      "size": {
+        "x": 0.16,
+        "y": 2.8,
+        "z": 4.6
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Room dividing wall",
+      "group": "Rear rooms",
+      "position": {
+        "x": 5.5,
+        "y": 0,
+        "z": 3.7
+      },
+      "size": {
+        "x": 0.16,
+        "y": 2.8,
+        "z": 4.6
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Low room front",
+      "group": "Rear rooms",
+      "position": {
+        "x": 2.3,
+        "y": 0,
+        "z": 1.4
+      },
+      "size": {
+        "x": 0.6000000000000001,
+        "y": 1.05,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Low room front",
+      "group": "Rear rooms",
+      "position": {
+        "x": 4.65,
+        "y": 0,
+        "z": 1.4
+      },
+      "size": {
+        "x": 1.6999999999999997,
+        "y": 1.05,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Open timber door",
+      "group": "Rear rooms",
+      "position": {
+        "x": 2.58,
+        "y": 0.03,
+        "z": 2.01
+      },
+      "size": {
+        "x": 0.1,
+        "y": 2.1,
+        "z": 1.15
+      },
+      "guid": "",
+      "yaw": -12,
+      "material": "wood",
+      "solid": true
+    },
+    {
+      "name": "Low room front",
+      "group": "Rear rooms",
+      "position": {
+        "x": 5.800000000000001,
+        "y": 0,
+        "z": 1.4
+      },
+      "size": {
+        "x": 0.6000000000000005,
+        "y": 1.05,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Low room front",
+      "group": "Rear rooms",
+      "position": {
+        "x": 8.15,
+        "y": 0,
+        "z": 1.4
+      },
+      "size": {
+        "x": 1.7000000000000002,
+        "y": 1.05,
+        "z": 0.16
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "wall",
+      "solid": true
+    },
+    {
+      "name": "Open timber door",
+      "group": "Rear rooms",
+      "position": {
+        "x": 6.08,
+        "y": 0.03,
+        "z": 2.01
+      },
+      "size": {
+        "x": 0.1,
+        "y": 2.1,
+        "z": 1.15
+      },
+      "guid": "",
+      "yaw": -12,
+      "material": "wood",
+      "solid": true
+    },
+    {
+      "name": "Desk1",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0,
+        "z": 3.9
+      },
+      "size": {
+        "x": 2.12,
+        "y": 0.78,
+        "z": 0.82
+      },
+      "guid": "7659bbd3718224272916cf1e9b1c26b2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Drawer1_C1",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.08,
+        "y": 0,
+        "z": 3.85
+      },
+      "size": {
+        "x": 0.43,
+        "y": 0.68,
+        "z": 0.58
+      },
+      "guid": "e635e51bf8cb24e43a3e41215edec750",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WorkChair2_C1",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0,
+        "z": 2.9
+      },
+      "size": {
+        "x": 0.65,
+        "y": 1.02,
+        "z": 0.7
+      },
+      "guid": "53435fb89fb8944bbac7e548de42b004",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Pc1_C1",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0.78,
+        "z": 4.04
+      },
+      "size": {
+        "x": 0.64,
+        "y": 0.48,
+        "z": 0.19
+      },
+      "guid": "a57f8a286e61e42bd99d7d934ef85724",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Keyboard_01",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0.785,
+        "z": 3.67
+      },
+      "size": {
+        "x": 0.48,
+        "y": 0.035,
+        "z": 0.16
+      },
+      "guid": "422bde28a8ba1419cb4070118bb859b8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Mouse_01",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.41,
+        "y": 0.785,
+        "z": 3.65
+      },
+      "size": {
+        "x": 0.08,
+        "y": 0.04,
+        "z": 0.12
+      },
+      "guid": "6bd345519aaf8407b84d9663bc6583b4",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MagazineFile_01",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.0,
+        "y": 0.78,
+        "z": 4.0
+      },
+      "size": {
+        "x": 0.19,
+        "y": 0.33,
+        "z": 0.24
+      },
+      "guid": "71cda972172014cda8f287e222ddcdfa",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "DeskOrganizer_01",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -6.6,
+        "y": 0.78,
+        "z": 4.0
+      },
+      "size": {
+        "x": 0.17,
+        "y": 0.2,
+        "z": 0.17
+      },
+      "guid": "a461dbffac3ce4cf4a5488a488593a15",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Rear fabric partition",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0,
+        "z": 4.46
+      },
+      "size": {
+        "x": 2.6,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 0,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Left fabric partition",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -7.1,
+        "y": 0,
+        "z": 3.55
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Right fabric partition",
+      "group": "Cubicles/Row 1 - Desk 1",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": 3.55
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Desk1",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0,
+        "z": 3.9
+      },
+      "size": {
+        "x": 2.12,
+        "y": 0.78,
+        "z": 0.82
+      },
+      "guid": "7659bbd3718224272916cf1e9b1c26b2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Drawer1_C1",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -2.4800000000000004,
+        "y": 0,
+        "z": 3.85
+      },
+      "size": {
+        "x": 0.43,
+        "y": 0.68,
+        "z": 0.58
+      },
+      "guid": "e635e51bf8cb24e43a3e41215edec750",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WorkChair2_C1",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0,
+        "z": 2.9
+      },
+      "size": {
+        "x": 0.65,
+        "y": 1.02,
+        "z": 0.7
+      },
+      "guid": "53435fb89fb8944bbac7e548de42b004",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Pc1_C1",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0.78,
+        "z": 4.04
+      },
+      "size": {
+        "x": 0.64,
+        "y": 0.48,
+        "z": 0.19
+      },
+      "guid": "a57f8a286e61e42bd99d7d934ef85724",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Keyboard_01",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0.785,
+        "z": 3.67
+      },
+      "size": {
+        "x": 0.48,
+        "y": 0.035,
+        "z": 0.16
+      },
+      "guid": "422bde28a8ba1419cb4070118bb859b8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Mouse_01",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -2.81,
+        "y": 0.785,
+        "z": 3.65
+      },
+      "size": {
+        "x": 0.08,
+        "y": 0.04,
+        "z": 0.12
+      },
+      "guid": "6bd345519aaf8407b84d9663bc6583b4",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MagazineFile_01",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -2.4000000000000004,
+        "y": 0.78,
+        "z": 4.0
+      },
+      "size": {
+        "x": 0.19,
+        "y": 0.33,
+        "z": 0.24
+      },
+      "guid": "71cda972172014cda8f287e222ddcdfa",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "DeskOrganizer_01",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -4.0,
+        "y": 0.78,
+        "z": 4.0
+      },
+      "size": {
+        "x": 0.17,
+        "y": 0.2,
+        "z": 0.17
+      },
+      "guid": "a461dbffac3ce4cf4a5488a488593a15",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Rear fabric partition",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0,
+        "z": 4.46
+      },
+      "size": {
+        "x": 2.6,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 0,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Right fabric partition",
+      "group": "Cubicles/Row 1 - Desk 2",
+      "position": {
+        "x": -1.9000000000000001,
+        "y": 0,
+        "z": 3.55
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Desk1",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0,
+        "z": 3.9
+      },
+      "size": {
+        "x": 2.12,
+        "y": 0.78,
+        "z": 0.82
+      },
+      "guid": "7659bbd3718224272916cf1e9b1c26b2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Drawer1_C1",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": 0.12,
+        "y": 0,
+        "z": 3.85
+      },
+      "size": {
+        "x": 0.43,
+        "y": 0.68,
+        "z": 0.58
+      },
+      "guid": "e635e51bf8cb24e43a3e41215edec750",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WorkChair2_C1",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0,
+        "z": 2.9
+      },
+      "size": {
+        "x": 0.65,
+        "y": 1.02,
+        "z": 0.7
+      },
+      "guid": "53435fb89fb8944bbac7e548de42b004",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Pc1_C1",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0.78,
+        "z": 4.04
+      },
+      "size": {
+        "x": 0.64,
+        "y": 0.48,
+        "z": 0.19
+      },
+      "guid": "a57f8a286e61e42bd99d7d934ef85724",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Keyboard_01",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0.785,
+        "z": 3.67
+      },
+      "size": {
+        "x": 0.48,
+        "y": 0.035,
+        "z": 0.16
+      },
+      "guid": "422bde28a8ba1419cb4070118bb859b8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Mouse_01",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": -0.20999999999999996,
+        "y": 0.785,
+        "z": 3.65
+      },
+      "size": {
+        "x": 0.08,
+        "y": 0.04,
+        "z": 0.12
+      },
+      "guid": "6bd345519aaf8407b84d9663bc6583b4",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MagazineFile_01",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": 0.20000000000000007,
+        "y": 0.78,
+        "z": 4.0
+      },
+      "size": {
+        "x": 0.19,
+        "y": 0.33,
+        "z": 0.24
+      },
+      "guid": "71cda972172014cda8f287e222ddcdfa",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "DeskOrganizer_01",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": -1.4,
+        "y": 0.78,
+        "z": 4.0
+      },
+      "size": {
+        "x": 0.17,
+        "y": 0.2,
+        "z": 0.17
+      },
+      "guid": "a461dbffac3ce4cf4a5488a488593a15",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Rear fabric partition",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0,
+        "z": 4.46
+      },
+      "size": {
+        "x": 2.6,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 0,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Right fabric partition",
+      "group": "Cubicles/Row 1 - Desk 3",
+      "position": {
+        "x": 0.7000000000000001,
+        "y": 0,
+        "z": 3.55
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Desk1",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0,
+        "z": -0.25
+      },
+      "size": {
+        "x": 2.12,
+        "y": 0.78,
+        "z": 0.82
+      },
+      "guid": "7659bbd3718224272916cf1e9b1c26b2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Drawer1_C1",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.08,
+        "y": 0,
+        "z": -0.3
+      },
+      "size": {
+        "x": 0.43,
+        "y": 0.68,
+        "z": 0.58
+      },
+      "guid": "e635e51bf8cb24e43a3e41215edec750",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WorkChair2_C1",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0,
+        "z": -1.25
+      },
+      "size": {
+        "x": 0.65,
+        "y": 1.02,
+        "z": 0.7
+      },
+      "guid": "53435fb89fb8944bbac7e548de42b004",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Pc1_C1",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0.78,
+        "z": -0.10999999999999999
+      },
+      "size": {
+        "x": 0.64,
+        "y": 0.48,
+        "z": 0.19
+      },
+      "guid": "a57f8a286e61e42bd99d7d934ef85724",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Keyboard_01",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0.785,
+        "z": -0.48
+      },
+      "size": {
+        "x": 0.48,
+        "y": 0.035,
+        "z": 0.16
+      },
+      "guid": "422bde28a8ba1419cb4070118bb859b8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Mouse_01",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.41,
+        "y": 0.785,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.08,
+        "y": 0.04,
+        "z": 0.12
+      },
+      "guid": "6bd345519aaf8407b84d9663bc6583b4",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MagazineFile_01",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.0,
+        "y": 0.78,
+        "z": -0.15
+      },
+      "size": {
+        "x": 0.19,
+        "y": 0.33,
+        "z": 0.24
+      },
+      "guid": "71cda972172014cda8f287e222ddcdfa",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "DeskOrganizer_01",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -6.6,
+        "y": 0.78,
+        "z": -0.15
+      },
+      "size": {
+        "x": 0.17,
+        "y": 0.2,
+        "z": 0.17
+      },
+      "guid": "a461dbffac3ce4cf4a5488a488593a15",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Rear fabric partition",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -5.8,
+        "y": 0,
+        "z": 0.31000000000000005
+      },
+      "size": {
+        "x": 2.6,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 0,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Left fabric partition",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -7.1,
+        "y": 0,
+        "z": -0.6
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Right fabric partition",
+      "group": "Cubicles/Row 2 - Desk 1",
+      "position": {
+        "x": -4.5,
+        "y": 0,
+        "z": -0.6
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Desk1",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0,
+        "z": -0.25
+      },
+      "size": {
+        "x": 2.12,
+        "y": 0.78,
+        "z": 0.82
+      },
+      "guid": "7659bbd3718224272916cf1e9b1c26b2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Drawer1_C1",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -2.4800000000000004,
+        "y": 0,
+        "z": -0.3
+      },
+      "size": {
+        "x": 0.43,
+        "y": 0.68,
+        "z": 0.58
+      },
+      "guid": "e635e51bf8cb24e43a3e41215edec750",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WorkChair2_C1",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0,
+        "z": -1.25
+      },
+      "size": {
+        "x": 0.65,
+        "y": 1.02,
+        "z": 0.7
+      },
+      "guid": "53435fb89fb8944bbac7e548de42b004",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Pc1_C1",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0.78,
+        "z": -0.10999999999999999
+      },
+      "size": {
+        "x": 0.64,
+        "y": 0.48,
+        "z": 0.19
+      },
+      "guid": "a57f8a286e61e42bd99d7d934ef85724",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Keyboard_01",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0.785,
+        "z": -0.48
+      },
+      "size": {
+        "x": 0.48,
+        "y": 0.035,
+        "z": 0.16
+      },
+      "guid": "422bde28a8ba1419cb4070118bb859b8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Mouse_01",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -2.81,
+        "y": 0.785,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.08,
+        "y": 0.04,
+        "z": 0.12
+      },
+      "guid": "6bd345519aaf8407b84d9663bc6583b4",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MagazineFile_01",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -2.4000000000000004,
+        "y": 0.78,
+        "z": -0.15
+      },
+      "size": {
+        "x": 0.19,
+        "y": 0.33,
+        "z": 0.24
+      },
+      "guid": "71cda972172014cda8f287e222ddcdfa",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "DeskOrganizer_01",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -4.0,
+        "y": 0.78,
+        "z": -0.15
+      },
+      "size": {
+        "x": 0.17,
+        "y": 0.2,
+        "z": 0.17
+      },
+      "guid": "a461dbffac3ce4cf4a5488a488593a15",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Rear fabric partition",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -3.2,
+        "y": 0,
+        "z": 0.31000000000000005
+      },
+      "size": {
+        "x": 2.6,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 0,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Right fabric partition",
+      "group": "Cubicles/Row 2 - Desk 2",
+      "position": {
+        "x": -1.9000000000000001,
+        "y": 0,
+        "z": -0.6
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Desk1",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0,
+        "z": -0.25
+      },
+      "size": {
+        "x": 2.12,
+        "y": 0.78,
+        "z": 0.82
+      },
+      "guid": "7659bbd3718224272916cf1e9b1c26b2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Drawer1_C1",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": 0.12,
+        "y": 0,
+        "z": -0.3
+      },
+      "size": {
+        "x": 0.43,
+        "y": 0.68,
+        "z": 0.58
+      },
+      "guid": "e635e51bf8cb24e43a3e41215edec750",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WorkChair2_C1",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0,
+        "z": -1.25
+      },
+      "size": {
+        "x": 0.65,
+        "y": 1.02,
+        "z": 0.7
+      },
+      "guid": "53435fb89fb8944bbac7e548de42b004",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Pc1_C1",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0.78,
+        "z": -0.10999999999999999
+      },
+      "size": {
+        "x": 0.64,
+        "y": 0.48,
+        "z": 0.19
+      },
+      "guid": "a57f8a286e61e42bd99d7d934ef85724",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Keyboard_01",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0.785,
+        "z": -0.48
+      },
+      "size": {
+        "x": 0.48,
+        "y": 0.035,
+        "z": 0.16
+      },
+      "guid": "422bde28a8ba1419cb4070118bb859b8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Mouse_01",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": -0.20999999999999996,
+        "y": 0.785,
+        "z": -0.5
+      },
+      "size": {
+        "x": 0.08,
+        "y": 0.04,
+        "z": 0.12
+      },
+      "guid": "6bd345519aaf8407b84d9663bc6583b4",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MagazineFile_01",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": 0.20000000000000007,
+        "y": 0.78,
+        "z": -0.15
+      },
+      "size": {
+        "x": 0.19,
+        "y": 0.33,
+        "z": 0.24
+      },
+      "guid": "71cda972172014cda8f287e222ddcdfa",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "DeskOrganizer_01",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": -1.4,
+        "y": 0.78,
+        "z": -0.15
+      },
+      "size": {
+        "x": 0.17,
+        "y": 0.2,
+        "z": 0.17
+      },
+      "guid": "a461dbffac3ce4cf4a5488a488593a15",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Rear fabric partition",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": -0.6,
+        "y": 0,
+        "z": 0.31000000000000005
+      },
+      "size": {
+        "x": 2.6,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 0,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "Right fabric partition",
+      "group": "Cubicles/Row 2 - Desk 3",
+      "position": {
+        "x": 0.7000000000000001,
+        "y": 0,
+        "z": -0.6
+      },
+      "size": {
+        "x": 1.92,
+        "y": 1.5,
+        "z": 0.12
+      },
+      "guid": "54a20e4b3e06a4b2e9f4d3dfbcf7d5fa",
+      "yaw": 90,
+      "material": "partition",
+      "solid": true
+    },
+    {
+      "name": "ConferenceTable_01",
+      "group": "Huddle room",
+      "position": {
+        "x": 3.75,
+        "y": 0,
+        "z": 3.65
+      },
+      "size": {
+        "x": 1.25,
+        "y": 0.77,
+        "z": 1.9
+      },
+      "guid": "5359963e175de4836b2cd3a51deecb7b",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Chair_01",
+      "group": "Huddle room",
+      "position": {
+        "x": 2.65,
+        "y": 0,
+        "z": 3.1
+      },
+      "size": {
+        "x": 0.62,
+        "y": 0.92,
+        "z": 0.62
+      },
+      "guid": "4ae7c085495d44939b65c5915fb496b7",
+      "yaw": 90,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Chair_01",
+      "group": "Huddle room",
+      "position": {
+        "x": 2.65,
+        "y": 0,
+        "z": 4.2
+      },
+      "size": {
+        "x": 0.62,
+        "y": 0.92,
+        "z": 0.62
+      },
+      "guid": "4ae7c085495d44939b65c5915fb496b7",
+      "yaw": 90,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Chair_01",
+      "group": "Huddle room",
+      "position": {
+        "x": 4.85,
+        "y": 0,
+        "z": 3.1
+      },
+      "size": {
+        "x": 0.62,
+        "y": 0.92,
+        "z": 0.62
+      },
+      "guid": "4ae7c085495d44939b65c5915fb496b7",
+      "yaw": -90,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Chair_01",
+      "group": "Huddle room",
+      "position": {
+        "x": 4.85,
+        "y": 0,
+        "z": 4.2
+      },
+      "size": {
+        "x": 0.62,
+        "y": 0.92,
+        "z": 0.62
+      },
+      "guid": "4ae7c085495d44939b65c5915fb496b7",
+      "yaw": -90,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Whiteboard frame",
+      "group": "Huddle room",
+      "position": {
+        "x": 3.75,
+        "y": 1.5,
+        "z": 5.84
+      },
+      "size": {
+        "x": 2.4,
+        "y": 1.0,
+        "z": 0.07
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    },
+    {
+      "name": "Whiteboard",
+      "group": "Huddle room",
+      "position": {
+        "x": 3.75,
+        "y": 1.55,
+        "z": 5.79
+      },
+      "size": {
+        "x": 2.28,
+        "y": 0.88,
+        "z": 0.03
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "paper",
+      "solid": true
+    },
+    {
+      "name": "Whiteboard diagram",
+      "group": "Huddle room",
+      "position": {
+        "x": 3.1,
+        "y": 1.85,
+        "z": 5.765
+      },
+      "size": {
+        "x": 0.35,
+        "y": 0.025,
+        "z": 0.008
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "glass",
+      "solid": false
+    },
+    {
+      "name": "Whiteboard diagram",
+      "group": "Huddle room",
+      "position": {
+        "x": 3.6500000000000004,
+        "y": 2.0500000000000003,
+        "z": 5.765
+      },
+      "size": {
+        "x": 0.35,
+        "y": 0.025,
+        "z": 0.008
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "glass",
+      "solid": false
+    },
+    {
+      "name": "Whiteboard diagram",
+      "group": "Huddle room",
+      "position": {
+        "x": 4.2,
+        "y": 1.85,
+        "z": 5.765
+      },
+      "size": {
+        "x": 0.35,
+        "y": 0.025,
+        "z": 0.008
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "glass",
+      "solid": false
+    },
+    {
+      "name": "Desk2_C1",
+      "group": "Manager office",
+      "position": {
+        "x": 7.3,
+        "y": 0,
+        "z": 3.5
+      },
+      "size": {
+        "x": 2.35,
+        "y": 0.78,
+        "z": 1.0
+      },
+      "guid": "0da866785c3b84917baf5d1ae183a413",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WorkChair1_C1",
+      "group": "Manager office",
+      "position": {
+        "x": 7.3,
+        "y": 0,
+        "z": 4.55
+      },
+      "size": {
+        "x": 0.75,
+        "y": 1.2,
+        "z": 0.75
+      },
+      "guid": "b2ac234af0c00404aa16425eab4c2c6a",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Pc1_C1",
+      "group": "Manager office",
+      "position": {
+        "x": 7.8,
+        "y": 0.78,
+        "z": 3.55
+      },
+      "size": {
+        "x": 0.65,
+        "y": 0.48,
+        "z": 0.2
+      },
+      "guid": "a57f8a286e61e42bd99d7d934ef85724",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "PC_Keyboard_01",
+      "group": "Manager office",
+      "position": {
+        "x": 7.8,
+        "y": 0.79,
+        "z": 3.85
+      },
+      "size": {
+        "x": 0.46,
+        "y": 0.035,
+        "z": 0.16
+      },
+      "guid": "422bde28a8ba1419cb4070118bb859b8",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Chair_01",
+      "group": "Manager office",
+      "position": {
+        "x": 6.55,
+        "y": 0,
+        "z": 2.25
+      },
+      "size": {
+        "x": 0.65,
+        "y": 0.95,
+        "z": 0.65
+      },
+      "guid": "4ae7c085495d44939b65c5915fb496b7",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Chair_01",
+      "group": "Manager office",
+      "position": {
+        "x": 8.1,
+        "y": 0,
+        "z": 2.25
+      },
+      "size": {
+        "x": 0.65,
+        "y": 0.95,
+        "z": 0.65
+      },
+      "guid": "4ae7c085495d44939b65c5915fb496b7",
+      "yaw": 180,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Cabinet1_C1",
+      "group": "Manager office",
+      "position": {
+        "x": 8.35,
+        "y": 0,
+        "z": 5.35
+      },
+      "size": {
+        "x": 0.72,
+        "y": 1.45,
+        "z": 0.55
+      },
+      "guid": "583f5e5d72a5149ebb6a9718d2cef4d2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MagazineFile_01",
+      "group": "Manager office",
+      "position": {
+        "x": 6.6,
+        "y": 0.78,
+        "z": 3.5
+      },
+      "size": {
+        "x": 0.2,
+        "y": 0.35,
+        "z": 0.25
+      },
+      "guid": "71cda972172014cda8f287e222ddcdfa",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Plant_01",
+      "group": "Manager office",
+      "position": {
+        "x": 8.25,
+        "y": 0.78,
+        "z": 3.4
+      },
+      "size": {
+        "x": 0.32,
+        "y": 0.45,
+        "z": 0.32
+      },
+      "guid": "09e1bb88b25e64d2c87cc8cbcf601628",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Xerox_01",
+      "group": "Printer area",
+      "position": {
+        "x": -8.25,
+        "y": 0,
+        "z": -0.3
+      },
+      "size": {
+        "x": 1.0,
+        "y": 1.2,
+        "z": 0.85
+      },
+      "guid": "ea8d64d013ce24f7e834148a671015ec",
+      "yaw": 90,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Cabinet1_C1",
+      "group": "Printer area",
+      "position": {
+        "x": -8.15,
+        "y": 0,
+        "z": 5.25
+      },
+      "size": {
+        "x": 0.8,
+        "y": 1.6,
+        "z": 0.6
+      },
+      "guid": "583f5e5d72a5149ebb6a9718d2cef4d2",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "MemoBoard_01",
+      "group": "Printer area",
+      "position": {
+        "x": -8.8,
+        "y": 1.25,
+        "z": 1.65
+      },
+      "size": {
+        "x": 1.65,
+        "y": 1.05,
+        "z": 0.08
+      },
+      "guid": "1910db78ea0954a57b8975de4dc181c2",
+      "yaw": 90,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Box_01",
+      "group": "Printer area",
+      "position": {
+        "x": -8.1,
+        "y": 0,
+        "z": -2.2
+      },
+      "size": {
+        "x": 0.6,
+        "y": 0.5,
+        "z": 0.55
+      },
+      "guid": "8b6d9e5d363444071a0744c5e67aa7a8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Box_01",
+      "group": "Printer area",
+      "position": {
+        "x": -8,
+        "y": 0,
+        "z": 3.2
+      },
+      "size": {
+        "x": 0.6,
+        "y": 0.5,
+        "z": 0.55
+      },
+      "guid": "8b6d9e5d363444071a0744c5e67aa7a8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Box_01",
+      "group": "Printer area",
+      "position": {
+        "x": -8,
+        "y": 0,
+        "z": 2.5
+      },
+      "size": {
+        "x": 0.6,
+        "y": 0.5,
+        "z": 0.55
+      },
+      "guid": "8b6d9e5d363444071a0744c5e67aa7a8",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Scattered paper 00",
+      "group": "Printer area",
+      "position": {
+        "x": -8.25315567877099,
+        "y": 0.018,
+        "z": -2.171909598863524
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": 13.616524634456951,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 01",
+      "group": "Printer area",
+      "position": {
+        "x": -8.168540949416693,
+        "y": 0.018,
+        "z": -2.1640157471441857
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -5.026202150344602,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 02",
+      "group": "Printer area",
+      "position": {
+        "x": -7.857161639077976,
+        "y": 0.018,
+        "z": -1.7760201044923325
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -15.165190675837167,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 03",
+      "group": "Printer area",
+      "position": {
+        "x": -7.305056882338406,
+        "y": 0.018,
+        "z": -2.1707092187499164
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -43.73793133965203,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 04",
+      "group": "Printer area",
+      "position": {
+        "x": -8.363864653340732,
+        "y": 0.018,
+        "z": -1.6485419367714929
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -56.702076503224376,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 05",
+      "group": "Printer area",
+      "position": {
+        "x": -7.119837995862614,
+        "y": 0.018,
+        "z": -1.2901352752496889
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": 68.461460139926,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 06",
+      "group": "Printer area",
+      "position": {
+        "x": -8.23173017479995,
+        "y": 0.018,
+        "z": 1.5392002081705378
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": 0.9034904298312938,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 07",
+      "group": "Printer area",
+      "position": {
+        "x": -7.50225410580821,
+        "y": 0.018,
+        "z": 0.3786443041801095
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -32.10374544759058,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 08",
+      "group": "Printer area",
+      "position": {
+        "x": -8.097680251353756,
+        "y": 0.018,
+        "z": 0.4614051740985179
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -51.60042980307685,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 09",
+      "group": "Printer area",
+      "position": {
+        "x": -8.382796046771412,
+        "y": 0.018,
+        "z": 0.9010518056500461
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": 18.625514615936808,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 10",
+      "group": "Printer area",
+      "position": {
+        "x": -8.06185277847755,
+        "y": 0.018,
+        "z": -0.3023621725934671
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": 57.38787880405371,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 11",
+      "group": "Printer area",
+      "position": {
+        "x": -8.037417801891682,
+        "y": 0.018,
+        "z": -2.2056683095970078
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -11.586771279142845,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 12",
+      "group": "Printer area",
+      "position": {
+        "x": -8.182198735604048,
+        "y": 0.018,
+        "z": -1.0330827211419973
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -65.43297558944593,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 13",
+      "group": "Printer area",
+      "position": {
+        "x": -7.407136350970945,
+        "y": 0.018,
+        "z": 1.0710772212086663
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -17.689141762768635,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 14",
+      "group": "Printer area",
+      "position": {
+        "x": -7.9092097026357475,
+        "y": 0.018,
+        "z": -1.5639835177695598
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": 63.54323650949118,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 15",
+      "group": "Printer area",
+      "position": {
+        "x": -7.258938853027952,
+        "y": 0.018,
+        "z": 0.3794944168630976
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -45.5066018384931,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 16",
+      "group": "Printer area",
+      "position": {
+        "x": -8.175926452865587,
+        "y": 0.018,
+        "z": 0.8830506534756752
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -43.43437951120168,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 17",
+      "group": "Printer area",
+      "position": {
+        "x": -7.5048911124767566,
+        "y": 0.018,
+        "z": -0.7790212412615412
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -65.65242028910468,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 18",
+      "group": "Printer area",
+      "position": {
+        "x": -8.143024934233548,
+        "y": 0.018,
+        "z": 1.584042845821516
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -24.868915153785686,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 19",
+      "group": "Printer area",
+      "position": {
+        "x": -7.522967160488178,
+        "y": 0.018,
+        "z": 0.8557967744899901
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -14.198780097953318,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 20",
+      "group": "Printer area",
+      "position": {
+        "x": -7.75113658637168,
+        "y": 0.018,
+        "z": 1.3288573079937374
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": 31.782325281159473,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Scattered paper 21",
+      "group": "Printer area",
+      "position": {
+        "x": -7.722759839386745,
+        "y": 0.018,
+        "z": -0.18562069688303184
+      },
+      "size": {
+        "x": 0.22,
+        "y": 0.004,
+        "z": 0.3
+      },
+      "guid": "",
+      "yaw": -7.245864722246637,
+      "material": "paper",
+      "solid": false
+    },
+    {
+      "name": "Lounge rug",
+      "group": "Lounge",
+      "position": {
+        "x": 6.25,
+        "y": 0.012,
+        "z": -3.6
+      },
+      "size": {
+        "x": 4.8,
+        "y": 0.018,
+        "z": 3.7
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "rug",
+      "solid": false
+    },
+    {
+      "name": "Sofa1_C1",
+      "group": "Lounge",
+      "position": {
+        "x": 5.85,
+        "y": 0.035,
+        "z": -2.35
+      },
+      "size": {
+        "x": 2.35,
+        "y": 1.05,
+        "z": 0.9
+      },
+      "guid": "a3f2756d415b546819a8505b28f19c36",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Armchair1_C1",
+      "group": "Lounge",
+      "position": {
+        "x": 7.9,
+        "y": 0.035,
+        "z": -4.1
+      },
+      "size": {
+        "x": 0.95,
+        "y": 1.0,
+        "z": 0.95
+      },
+      "guid": "fd7a4973fe0f54c3495bbd83e4d63e04",
+      "yaw": -45,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "SideTable2_C1",
+      "group": "Lounge",
+      "position": {
+        "x": 5.8,
+        "y": 0.035,
+        "z": -3.9
+      },
+      "size": {
+        "x": 1.55,
+        "y": 0.48,
+        "z": 0.85
+      },
+      "guid": "ce45e59274a854721b36bcbd97de9f45",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Book_01",
+      "group": "Lounge",
+      "position": {
+        "x": 5.45,
+        "y": 0.52,
+        "z": -3.9
+      },
+      "size": {
+        "x": 0.25,
+        "y": 0.06,
+        "z": 0.32
+      },
+      "guid": "91037e29f90904a50bbd960d09da87c9",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Plant_01",
+      "group": "Lounge",
+      "position": {
+        "x": 6.2,
+        "y": 0.52,
+        "z": -3.9
+      },
+      "size": {
+        "x": 0.25,
+        "y": 0.32,
+        "z": 0.25
+      },
+      "guid": "09e1bb88b25e64d2c87cc8cbcf601628",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "WaterCooler_01",
+      "group": "Lounge",
+      "position": {
+        "x": 8.4,
+        "y": 0,
+        "z": -1.35
+      },
+      "size": {
+        "x": 0.6,
+        "y": 1.45,
+        "z": 0.6
+      },
+      "guid": "aa5a11e9326c14f3b81ad70077ef0c83",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Plant_01",
+      "group": "Entrance",
+      "position": {
+        "x": -0.7,
+        "y": 0,
+        "z": -5.4
+      },
+      "size": {
+        "x": 0.65,
+        "y": 1.1,
+        "z": 0.65
+      },
+      "guid": "09e1bb88b25e64d2c87cc8cbcf601628",
+      "yaw": 0,
+      "material": "",
+      "solid": true
+    },
+    {
+      "name": "Rear utility door",
+      "group": "Shell",
+      "position": {
+        "x": -7.2,
+        "y": 0,
+        "z": 5.88
+      },
+      "size": {
+        "x": 0.95,
+        "y": 2.15,
+        "z": 0.08
+      },
+      "guid": "",
+      "yaw": 0,
+      "material": "trim",
+      "solid": true
+    }
+  ]
+}
