@@ -19,6 +19,7 @@ public class PlayerWorkspaceShop : MonoBehaviour
 
     private int balance;
     private bool rewardReceived;
+    private bool inboxRewardReceived;
     private bool decorationPurchased;
 
     private string notification = "";
@@ -41,7 +42,15 @@ public class PlayerWorkspaceShop : MonoBehaviour
 
         decoration.SetActive(false);
     }
+    public void GrantInboxReward()
+{
+        if (inboxRewardReceived) return;
 
+    inboxRewardReceived = true;
+    balance += 15;
+
+    ShowNotification("Inbox cleaned! Earned $15.");
+}
     public void GrantTaskReward()
     {
         // This task can only pay the player once per play session.
