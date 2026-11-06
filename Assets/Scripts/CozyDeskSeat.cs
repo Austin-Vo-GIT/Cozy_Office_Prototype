@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 
 public class CozyDeskSeat : MonoBehaviour
 {
+    [Header("Computer Audio")]
+    [SerializeField] private AudioSource computerAudioSource;
+    [SerializeField] private AudioClip computerStartupSound;
+    [SerializeField, Range(0f, 1f)] private float startupVolume = 0.5f;
     [Header("References")]
     [SerializeField] private PlayerPrototype playerMovement;
     [SerializeField] private Camera gameCamera;
@@ -219,7 +223,10 @@ public class CozyDeskSeat : MonoBehaviour
         }
 
         usingComputer = true;
-
+        if (computerAudioSource != null && computerStartupSound != null)
+        {
+            computerAudioSource.PlayOneShot(computerStartupSound, startupVolume);
+        }
         savedCursorVisible = Cursor.visible;
         savedCursorLock = Cursor.lockState;
 

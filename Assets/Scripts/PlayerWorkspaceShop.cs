@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerWorkspaceShop : MonoBehaviour
 {
+    [Header("Reward Audio")]
+    [SerializeField] private AudioSource rewardAudioSource;
+    [SerializeField] private AudioClip rewardSound;
+    [SerializeField, Range(0f, 1f)] private float rewardVolume = 0.5f;
     [Header("References")]
     [SerializeField] private Transform player;
     [SerializeField] private Transform deskInteractionPoint;
@@ -48,8 +52,15 @@ public class PlayerWorkspaceShop : MonoBehaviour
 
     inboxRewardReceived = true;
     balance += 15;
-
+    PlayRewardSound();
     ShowNotification("Inbox cleaned! Earned $15.");
+}
+private void PlayRewardSound()
+{
+    if (rewardAudioSource != null && rewardSound != null)
+    {
+        rewardAudioSource.PlayOneShot(rewardSound, rewardVolume);
+    }
 }
     public void GrantTaskReward()
     {
@@ -58,7 +69,7 @@ public class PlayerWorkspaceShop : MonoBehaviour
 
         rewardReceived = true;
         balance += taskReward;
-
+        PlayRewardSound();
         ShowNotification(
             $"Paperwork delivered! Earned ${taskReward}."
         );
