@@ -7,6 +7,7 @@ public class CozyDeskSeat : MonoBehaviour
     [SerializeField] private AudioSource computerAudioSource;
     [SerializeField] private AudioClip computerStartupSound;
     [SerializeField, Range(0f, 1f)] private float startupVolume = 0.5f;
+
     [Header("References")]
     [SerializeField] private PlayerPrototype playerMovement;
     [SerializeField] private Camera gameCamera;
@@ -20,6 +21,24 @@ public class CozyDeskSeat : MonoBehaviour
 
     [Range(20f, 90f)]
     [SerializeField] private float seatedFieldOfView = 60f;
+
+    [Header("Seated Look - Hold L")]
+    [SerializeField] private bool enableSeatedLook = true;
+
+    [Tooltip("Degrees of rotation per pixel of mouse movement.")]
+    [Range(0.01f, 1f)]
+    [SerializeField] private float mouseSensitivity = 0.12f;
+
+    [Range(0f, 120f)]
+    [SerializeField] private float horizontalLookLimit = 70f;
+
+    [Range(0f, 60f)]
+    [SerializeField] private float lookUpLimit = 30f;
+
+    [Range(0f, 75f)]
+    [SerializeField] private float lookDownLimit = 45f;
+
+    [SerializeField] private bool invertMouseY = false;
 
     [Header("Computer Mode")]
     [SerializeField] private Transform computerViewPoint;
@@ -40,6 +59,10 @@ public class CozyDeskSeat : MonoBehaviour
     private bool initialized;
     private bool seated;
     private bool usingComputer;
+    private bool lookingAround;
+
+    private float lookYaw;
+    private float lookPitch;
 
     private bool movementWasEnabled;
     private bool followWasEnabled;
@@ -47,8 +70,13 @@ public class CozyDeskSeat : MonoBehaviour
     private bool bodyWasKinematic;
     private bool shopWasEnabled;
 
+    // Cursor state before entering computer mode.
     private bool savedCursorVisible;
     private CursorLockMode savedCursorLock;
+
+    // Separate cursor state for temporary hold-L looking.
+    private bool lookCursorWasVisible;
+    private CursorLockMode lookCursorWasLocked;
 
     private Vector3 savedCameraPosition;
     private Quaternion savedCameraRotation;
@@ -118,7 +146,12 @@ public class CozyDeskSeat : MonoBehaviour
         if (!initialized) return;
 
         Keyboard keyboard = Keyboard.current;
-        if (keyboard == null) return;
+
+        if (!Application.isFocused || keyboard == null)
+        {
+            EndLookAround();
+            return;
+        }
 
         if (seated)
         {
@@ -134,18 +167,20 @@ public class CozyDeskSeat : MonoBehaviour
                 return;
             }
 
+            if (keyboard.fKey.wasPressedThisFrame ||
+                keyboard.escapeKey.wasPressedThisFrame)
+            {
+                StandUp();
+                return;
+            }
+
             if (keyboard.cKey.wasPressedThisFrame)
             {
                 OpenComputer();
                 return;
             }
 
-            if (keyboard.fKey.wasPressedThisFrame ||
-                keyboard.escapeKey.wasPressedThisFrame)
-            {
-                StandUp();
-            }
-
+            UpdateSeatedLook(keyboard);
             return;
         }
 
@@ -155,11 +190,81 @@ public class CozyDeskSeat : MonoBehaviour
         }
     }
 
+    private void UpdateSeatedLook(Keyboard keyboard)
+    {
+        Mouse mouse = Mouse.current;
+
+        bool shouldLook =
+            enableSeatedLook &&
+            keyboard.lKey.isPressed &&
+            mouse != null;
+
+        if (!shouldLook)
+        {
+            EndLookAround();
+            return;
+        }
+
+        if (!lookingAround)
+        {
+            BeginLookAround();
+
+            // Ignore movement from before the cursor was locked.
+            return;
+        }
+
+        Vector2 mouseDelta = mouse.delta.ReadValue();
+
+        // Mouse delta already represents movement this frame.
+        // Do not multiply it by Time.deltaTime.
+        lookYaw += mouseDelta.x * mouseSensitivity;
+
+        float verticalDirection = invertMouseY ? 1f : -1f;
+        lookPitch +=
+            mouseDelta.y * mouseSensitivity * verticalDirection;
+
+        lookYaw = Mathf.Clamp(
+            lookYaw,
+            -horizontalLookLimit,
+            horizontalLookLimit
+        );
+
+        lookPitch = Mathf.Clamp(
+            lookPitch,
+            -lookUpLimit,
+            lookDownLimit
+        );
+    }
+
+    private void BeginLookAround()
+    {
+        if (lookingAround) return;
+
+        lookCursorWasVisible = Cursor.visible;
+        lookCursorWasLocked = Cursor.lockState;
+
+        lookingAround = true;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void EndLookAround()
+    {
+        if (!lookingAround) return;
+
+        lookingAround = false;
+
+        Cursor.lockState = lookCursorWasLocked;
+        Cursor.visible = lookCursorWasVisible;
+
+        // Keep lookYaw and lookPitch so the view stays turned.
+    }
+
     private void SitDown()
     {
         if (seated) return;
 
-        // Remember the walking camera's current settings.
         savedCameraPosition = gameCamera.transform.position;
         savedCameraRotation = gameCamera.transform.rotation;
         savedFieldOfView = gameCamera.fieldOfView;
@@ -172,7 +277,6 @@ public class CozyDeskSeat : MonoBehaviour
         playerMovement.enabled = false;
         cameraFollow.enabled = false;
 
-        // Stop motion before freezing physics movement.
         if (!playerBody.isKinematic)
         {
             playerBody.linearVelocity = Vector3.zero;
@@ -196,9 +300,11 @@ public class CozyDeskSeat : MonoBehaviour
             coworkerInteraction.enabled = false;
         }
 
+        // Each new seated session starts facing the desk.
+        lookYaw = 0f;
+        lookPitch = 0f;
         seated = true;
 
-        // Enter the wider seated view immediately.
         gameCamera.transform.SetPositionAndRotation(
             seatedViewPoint.position,
             seatedViewPoint.rotation
@@ -222,23 +328,30 @@ public class CozyDeskSeat : MonoBehaviour
             return;
         }
 
+        // Restore the seated cursor before saving computer cursor state.
+        EndLookAround();
+
         usingComputer = true;
-        if (computerAudioSource != null && computerStartupSound != null)
+
+        if (computerAudioSource != null &&
+            computerStartupSound != null)
         {
-            computerAudioSource.PlayOneShot(computerStartupSound, startupVolume);
+            computerAudioSource.PlayOneShot(
+                computerStartupSound,
+                startupVolume
+            );
         }
+
         savedCursorVisible = Cursor.visible;
         savedCursorLock = Cursor.lockState;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        // Turn on the monitor and allow desktop clicks.
         desktop.gameObject.SetActive(true);
         desktop.interactable = true;
         desktop.blocksRaycasts = true;
 
-        // Hide the shop HUD and pause the B purchase shortcut.
         if (workspaceShop != null)
         {
             shopWasEnabled = workspaceShop.enabled;
@@ -266,6 +379,8 @@ public class CozyDeskSeat : MonoBehaviour
         {
             workspaceShop.enabled = shopWasEnabled;
         }
+
+        // The saved look offsets are used again in LateUpdate.
     }
 
     private void LateUpdate()
@@ -289,6 +404,18 @@ public class CozyDeskSeat : MonoBehaviour
             ? computerFieldOfView
             : seatedFieldOfView;
 
+        Quaternion targetRotation = targetView.rotation;
+
+        if (!usingComputer)
+        {
+            // Turn around the world's upright axis, then tilt locally.
+            // The original seated marker is never modified.
+            targetRotation =
+                Quaternion.AngleAxis(lookYaw, Vector3.up) *
+                seatedViewPoint.rotation *
+                Quaternion.AngleAxis(lookPitch, Vector3.right);
+        }
+
         float blend = 1f - Mathf.Exp(
             -cameraTransitionSpeed * Time.deltaTime
         );
@@ -301,7 +428,7 @@ public class CozyDeskSeat : MonoBehaviour
 
         gameCamera.transform.rotation = Quaternion.Slerp(
             gameCamera.transform.rotation,
-            targetView.rotation,
+            targetRotation,
             blend
         );
 
@@ -316,12 +443,16 @@ public class CozyDeskSeat : MonoBehaviour
 
     private void StandUp()
     {
+        EndLookAround();
+
         if (!seated) return;
 
         CloseComputer();
         seated = false;
 
-        // Restore the walking camera.
+        lookYaw = 0f;
+        lookPitch = 0f;
+
         if (gameCamera != null)
         {
             gameCamera.transform.SetPositionAndRotation(
@@ -333,7 +464,6 @@ public class CozyDeskSeat : MonoBehaviour
             gameCamera.nearClipPlane = savedNearClip;
         }
 
-        // Restore each renderer's previous visibility.
         if (playerRenderers != null)
         {
             for (int i = 0; i < playerRenderers.Length; i++)
@@ -363,6 +493,14 @@ public class CozyDeskSeat : MonoBehaviour
         if (coworkerInteraction != null)
         {
             coworkerInteraction.enabled = coworkerWasEnabled;
+        }
+    }
+
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        if (!hasFocus)
+        {
+            EndLookAround();
         }
     }
 
@@ -402,7 +540,11 @@ public class CozyDeskSeat : MonoBehaviour
         }
         else if (seated)
         {
-            instructions = "C: Use computer\nF or Esc: Stand up";
+            instructions = enableSeatedLook
+                ? "Hold L + mouse: Look around\n" +
+                  "C: Use computer\n" +
+                  "F or Esc: Stand up"
+                : "C: Use computer\nF or Esc: Stand up";
         }
         else
         {
@@ -410,12 +552,11 @@ public class CozyDeskSeat : MonoBehaviour
         }
 
         GUILayout.BeginArea(
-            new Rect(20, 610, 380, 90),
+            new Rect(20, 580, 420, 120),
             GUI.skin.box
         );
 
         GUILayout.Label(instructions, textStyle);
-
         GUILayout.EndArea();
 
         GUI.matrix = previousMatrix;
