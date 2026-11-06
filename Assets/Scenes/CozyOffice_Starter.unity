@@ -13958,6 +13958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InboxCleanup
   workspaceShop: {fileID: 451695526}
   progressText: {fileID: 665140357}
+  inboxIconText: {fileID: 1947479032}
   subjectText: {fileID: 269731307}
   bodyText: {fileID: 69895760}
   feedbackText: {fileID: 214432229}
@@ -37146,7 +37147,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inbox
+  m_text: Inbox (5)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

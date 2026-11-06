@@ -9,6 +9,7 @@ public class InboxCleanup : MonoBehaviour
 
     [Header("Text")]
     [SerializeField] private TMP_Text progressText;
+    [SerializeField] private TMP_Text inboxIconText;
     [SerializeField] private TMP_Text subjectText;
     [SerializeField] private TMP_Text bodyText;
     [SerializeField] private TMP_Text feedbackText;
@@ -218,6 +219,14 @@ public class InboxCleanup : MonoBehaviour
 
     private void RefreshDisplay()
     {
+        if (inboxIconText != null)
+        {
+            int remainingEmails = completed
+                 ? 0
+                 : emails.Length - currentEmail - (waitingForNext ? 1 : 0);
+
+            inboxIconText.text = $"Inbox ({remainingEmails})";
+        }
         if (completed)
         {
             progressText.text = "INBOX CLEANUP • COMPLETE";
