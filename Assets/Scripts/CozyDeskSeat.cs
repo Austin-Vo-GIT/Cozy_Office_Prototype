@@ -3,6 +3,12 @@ using UnityEngine.InputSystem;
 
 public class CozyDeskSeat : MonoBehaviour
 {
+        public bool CanInteractWithDesk =>
+        isActiveAndEnabled &&
+        initialized &&
+        seated &&
+        !usingComputer &&
+        !lookingAround;
     [Header("Computer Audio")]
     [SerializeField] private AudioSource computerAudioSource;
     [SerializeField] private AudioClip computerStartupSound;
