@@ -3,6 +3,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerWorkspaceShop : MonoBehaviour
 {
+        [Header("Decoration Placement Audio")]
+    [SerializeField] private AudioSource placementAudioSource;
+    [SerializeField] private AudioClip placementSound;
+
+    [SerializeField, Range(0f, 1f)]
+    private float placementVolume = 0.4f;
     [Header("Reward Audio")]
     [SerializeField] private AudioSource rewardAudioSource;
     [SerializeField] private AudioClip rewardSound;
@@ -107,7 +113,13 @@ private void PlayRewardSound()
             balance -= decorationCost;
             decorationPurchased = true;
             decoration.SetActive(true);
-
+            if (placementAudioSource != null && placementSound != null)
+            {
+                placementAudioSource.PlayOneShot(
+                    placementSound,
+                    placementVolume
+                );
+            }
             ShowNotification("Your cubicle feels more like yours!");
         }
     }

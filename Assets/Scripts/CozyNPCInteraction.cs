@@ -3,6 +3,12 @@ using UnityEngine.InputSystem;
 
 public class CozyNPCInteraction : MonoBehaviour
 {
+    [Header("Paperwork Audio")]
+    [SerializeField] private AudioSource paperworkAudioSource;
+    [SerializeField] private AudioClip paperworkSound;
+
+    [SerializeField, Range(0f, 1f)]
+    private float paperworkVolume = 0.5f;
     [Header("References")]
     [SerializeField] private Transform player;
     [SerializeField] private GameObject paperwork;
@@ -53,7 +59,47 @@ public class CozyNPCInteraction : MonoBehaviour
         return Vector3.Distance(player.position, point.position)
             <= interactionDistance;
     }
+    private void PlayPaperworkSound()
+    {
+    if (paperworkAudioSource == null || paperworkSound == null)
+        return;
 
+    paperworkAudioSource.PlayOneShot(
+        paperworkSound,
+        paperworkVolume
+    );
+    }
+    private System.Collections.IEnumerator
+    GrantDeliveryRewardAfterPaperSound()
+{
+    float delay = 0f;
+
+    if (paperworkAudioSource != null &&
+        paperworkAudioSource.isActiveAndEnabled &&
+        paperworkSound != null)
+    {
+        // Account for the Audio Source's playback pitch.
+        float pitch = Mathf.Max(
+            0.01f,
+            Mathf.Abs(paperworkAudioSource.pitch)
+        );
+
+        delay = paperworkSound.length / pitch;
+
+        // A small pause separates the paper sound from the chime.
+        delay += 0.15f;
+    }
+
+    if (delay > 0f)
+    {
+        yield return new WaitForSeconds(delay);
+    }
+
+    if (workspaceShop != null)
+    {
+        workspaceShop.GrantTaskReward();
+    }
+}
     private void Update()
     {
         if (player == null) return;
@@ -87,6 +133,7 @@ public class CozyNPCInteraction : MonoBehaviour
             paperwork != null && IsNear(paperwork.transform))
         {
             paperwork.SetActive(false);
+            PlayPaperworkSound();
             stage = TaskStage.DeliverPaperwork;
             return;
         }
@@ -95,16 +142,13 @@ public class CozyNPCInteraction : MonoBehaviour
     IsNear(deliveryPoint))
 {
     stage = TaskStage.Completed;
-
+PlayPaperworkSound();
     if (deliveredPaperwork != null)
     {
         deliveredPaperwork.SetActive(true);
     }
 
-    if (workspaceShop != null)
-    {
-        workspaceShop.GrantTaskReward();
-    }
+    StartCoroutine(GrantDeliveryRewardAfterPaperSound());
 
     return;
 }

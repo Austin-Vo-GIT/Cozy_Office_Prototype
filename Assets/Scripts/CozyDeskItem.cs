@@ -18,6 +18,13 @@ public class CozyDeskItem : MonoBehaviour
     [Min(0.05f)]
     [SerializeField] private float straightenDuration = 0.45f;
 
+    [Header("Item Audio")]
+    [SerializeField] private AudioSource itemAudioSource;
+    [SerializeField] private AudioClip actionSound;
+
+    [Range(0f, 1f)]
+    [SerializeField] private float actionVolume = 0.4f;
+
     private Vector3 tidyPosition;
     private Quaternion tidyRotation;
     private Vector3 startingPosition;
@@ -46,8 +53,14 @@ public class CozyDeskItem : MonoBehaviour
             tidyRotation * Quaternion.Euler(messyRotationOffset);
 
         tidy =
-            Vector3.Distance(transform.localPosition, tidyPosition) < 0.001f &&
-            Quaternion.Angle(transform.localRotation, tidyRotation) < 0.1f;
+            Vector3.Distance(
+                transform.localPosition,
+                tidyPosition
+            ) < 0.001f &&
+            Quaternion.Angle(
+                transform.localRotation,
+                tidyRotation
+            ) < 0.1f;
     }
 
     public void Straighten()
@@ -59,6 +72,15 @@ public class CozyDeskItem : MonoBehaviour
 
         elapsed = 0f;
         moving = true;
+
+        // Play once when the item begins moving.
+        if (itemAudioSource != null && actionSound != null)
+        {
+            itemAudioSource.PlayOneShot(
+                actionSound,
+                actionVolume
+            );
+        }
     }
 
     private void Update()
@@ -71,7 +93,11 @@ public class CozyDeskItem : MonoBehaviour
             elapsed / Mathf.Max(0.05f, straightenDuration)
         );
 
-        float smoothProgress = Mathf.SmoothStep(0f, 1f, progress);
+        float smoothProgress = Mathf.SmoothStep(
+            0f,
+            1f,
+            progress
+        );
 
         transform.localPosition = Vector3.Lerp(
             startingPosition,
