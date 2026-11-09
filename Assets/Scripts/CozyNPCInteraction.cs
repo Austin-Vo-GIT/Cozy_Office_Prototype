@@ -116,7 +116,7 @@ public class CozyNPCInteraction : MonoBehaviour
             return;
         }
 
-        if (!keyboard.eKey.wasPressedThisFrame) return;
+        if (!keyboard.tKey.wasPressedThisFrame) return;
 
         // An open conversation takes priority over other actions.
         if (dialogueOpen)
@@ -199,14 +199,14 @@ PlayPaperworkSound();
     {
         if (stage == TaskStage.CollectPaperwork &&
             paperwork != null && IsNear(paperwork.transform))
-            return "Press E to pick up paperwork";
+            return "Press T to pick up paperwork";
 
         if (stage == TaskStage.DeliverPaperwork &&
             IsNear(deliveryPoint))
-            return "Press E to deliver paperwork";
+            return "Press T to deliver paperwork";
 
         if (IsNear(transform))
-            return "Press E to talk";
+            return "Press T to talk";
 
         return "";
     }
@@ -245,8 +245,8 @@ PlayPaperworkSound();
             GUILayout.Space(12);
 
             string instructions = stage == TaskStage.NotStarted
-                ? "E: Accept task     Esc: Not now"
-                : "E or Esc: Close";
+                ? "T: Accept task     Esc: Not now"
+                : "T or Esc: Close";
 
             GUILayout.Label(instructions, textStyle);
             GUILayout.EndArea();
