@@ -24,6 +24,7 @@ public class CozyDeskOrganizer : MonoBehaviour
     private void LateUpdate()
     {
         hoveredItem = null;
+        if (PlayerWorkspaceShop.PointerOverPurchasePanel()) return;
         if (CozyGameMenu.BlocksGameplay || !Application.isFocused ||
             deskSeat == null || !deskSeat.CanInteractWithDesk) return;
         Keyboard keyboard = Keyboard.current;
@@ -64,12 +65,9 @@ public class CozyDeskOrganizer : MonoBehaviour
         Matrix4x4 previousMatrix = GUI.matrix;
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,
             new Vector3(Screen.width / 1280f, Screen.height / 720f, 1f));
-        GUIStyle style = new GUIStyle(GUI.skin.label)
-            { fontSize = 22, alignment = TextAnchor.MiddleCenter, wordWrap = true };
-        Rect rect = new Rect(440, 495, 400, 70);
-        GUI.Box(rect, GUIContent.none);
-        GUI.Label(rect, "Click to " + hoveredItem.ActionText.ToLowerInvariant() +
-            "\n" + hoveredItem.ItemName, style);
+        string text = "Click to " + hoveredItem.ActionText.ToLowerInvariant()
+            + "\n" + hoveredItem.ItemName;
+        CozyOverlayGUI.Draw(text, 420f, 550f);
         GUI.matrix = previousMatrix;
     }
 }

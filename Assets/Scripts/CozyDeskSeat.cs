@@ -293,16 +293,13 @@ public class CozyDeskSeat : MonoBehaviour
         Matrix4x4 previousMatrix = GUI.matrix;
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,
             new Vector3(Screen.width / 1280f, Screen.height / 720f, 1f));
-        GUIStyle textStyle = new GUIStyle(GUI.skin.label) { fontSize = 22, wordWrap = true };
         string instructions;
         if (usingComputer) instructions = "Esc or F: Return to seated view";
         else if (seated) instructions = enableSeatedLook
             ? "Hold L + mouse: Look around\nC: Use computer\nF or Esc: Stand up"
             : "C: Use computer\nF or Esc: Stand up";
         else instructions = "F: Sit at your desk";
-        GUILayout.BeginArea(new Rect(20, 580, 420, 120), GUI.skin.box);
-        GUILayout.Label(instructions, textStyle);
-        GUILayout.EndArea();
+        CozyOverlayGUI.Draw(instructions, 460f, 700f, false);
         GUI.matrix = previousMatrix;
     }
 }

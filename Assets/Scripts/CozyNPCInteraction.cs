@@ -143,28 +143,17 @@ public class CozyNPCInteraction : MonoBehaviour
         Matrix4x4 previousMatrix = GUI.matrix;
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,
             new Vector3(Screen.width / 1280f, Screen.height / 720f, 1f));
-        GUIStyle textStyle = new GUIStyle(GUI.skin.label)
-            { fontSize = 22, wordWrap = true };
         if (dialogueOpen)
         {
-            GUILayout.BeginArea(new Rect(240, 480, 800, 220), GUI.skin.box);
-            GUILayout.Label(coworkerName, textStyle);
-            GUILayout.Space(8);
-            GUILayout.Label(GetDialogue(), textStyle);
-            GUILayout.Space(12);
-            GUILayout.Label(stage == TaskStage.NotStarted
-                ? "T: Accept task     Esc: Not now" : "T or Esc: Close", textStyle);
-            GUILayout.EndArea();
+            string instructions = stage == TaskStage.NotStarted
+                ? "T: Accept task     Esc: Not now" : "T or Esc: Close";
+            string text = coworkerName + "\n\n" + GetDialogue()
+                + "\n\n" + instructions;
+            CozyOverlayGUI.Draw(text, 800f, 700f, fixedWidth: true);
         }
         else
         {
-            string prompt = GetPrompt();
-            if (!string.IsNullOrEmpty(prompt))
-            {
-                GUILayout.BeginArea(new Rect(390, 635, 500, 60), GUI.skin.box);
-                GUILayout.Label(prompt, textStyle);
-                GUILayout.EndArea();
-            }
+            CozyOverlayGUI.Draw(GetPrompt(), 600f, 700f);
         }
         GUI.matrix = previousMatrix;
     }

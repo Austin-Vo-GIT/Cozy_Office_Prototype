@@ -24,6 +24,8 @@ public class CozyGameMenu : MonoBehaviour
     private bool cursorWasVisible;
     private CursorLockMode cursorWasLocked;
     private Vector2 scrollPosition;
+    private Vector2 catalogScroll;
+    private bool shopPage;
     private bool desktopWasInteractable;
     private bool desktopBlockedRaycasts;
 
@@ -63,6 +65,7 @@ public class CozyGameMenu : MonoBehaviour
         cursorWasVisible = Cursor.visible;
         cursorWasLocked = Cursor.lockState;
         open = true;
+        shopPage = false;
         if (computerDesktop != null)
         {
             desktopWasInteractable = computerDesktop.interactable;
@@ -130,10 +133,22 @@ public class CozyGameMenu : MonoBehaviour
             GUI.DrawTexture(new Rect(240, 35, 800, 650), Texture2D.whiteTexture);
             GUI.color = Color.white;
             GUILayout.BeginArea(new Rect(270, 55, 740, 600));
-            GUILayout.Label("First Day Tasks:", title);
+            GUILayout.Label(shopPage ? "Cubicle Shop" : "First Day Tasks:", title);
             GUILayout.Space(12);
-            scrollPosition = GUILayout.BeginScrollView(scrollPosition,
-                GUILayout.Height(480));
+            if (shopPage)
+            {
+                catalogScroll = GUILayout.BeginScrollView(catalogScroll,
+                    GUILayout.Height(400));
+                if (workspaceShop != null)
+                    workspaceShop.DrawMainMenuCatalog(label, button);
+                else
+                    GUILayout.Label("Assign Workspace Shop on GameMenu.", label);
+                GUILayout.EndScrollView();
+            }
+            else
+            {
+                scrollPosition = GUILayout.BeginScrollView(scrollPosition,
+                    GUILayout.Height(400));
             GUILayout.Label("Special Delivery - Talk to your coworker.", label);
             GUILayout.Label("Printer Cleanup - The printer broke again.", label);
             GUILayout.Label("Inbox Cleanup - Check your computer.", label);
@@ -160,24 +175,19 @@ public class CozyGameMenu : MonoBehaviour
                     GUILayout.Label(workspaceShop.LatestNotification, label);
                 GUILayout.Space(12);
                 GUILayout.Label("Your cubicle", title);
-                if (workspaceShop.DecorationPurchased)
-                    GUILayout.Label(workspaceShop.DecorationName + ": Purchased", label);
-                else
-                {
-                    GUILayout.Label($"{workspaceShop.DecorationName} - ${workspaceShop.DecorationCost}", label);
-                    if (workspaceShop.CanPurchaseHere)
-                    {
-                        if (GUILayout.Button("Buy decoration", button, GUILayout.Height(42)))
-                        {
-                            ClickSound();
-                            workspaceShop.TryPurchaseDecoration();
-                        }
-                    }
-                    else GUILayout.Label("Visit your desk to buy this decoration.", label);
-                }
+                GUILayout.Label($"Decorations owned: {workspaceShop.PurchasedCount}", label);
+
             }
-            GUILayout.EndScrollView();
-            GUILayout.Space(12);
+                GUILayout.EndScrollView();
+            }
+            GUILayout.Space(8);
+            if (GUILayout.Button(shopPage ? "Back to Main Menu" : "Buy Items",
+                button, GUILayout.Height(44)))
+            {
+                ClickSound();
+                shopPage = !shopPage;
+            }
+            GUILayout.Space(8);
             if (GUILayout.Button("Close", button, GUILayout.Height(48)))
             {
                 ClickSound();

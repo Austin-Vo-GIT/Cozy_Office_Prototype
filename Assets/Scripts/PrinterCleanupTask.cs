@@ -137,10 +137,7 @@ public class PrinterCleanupTask : MonoBehaviour
         Matrix4x4 previousMatrix = GUI.matrix;
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,
             new Vector3(Screen.width / 1280f, Screen.height / 720f, 1f));
-        GUIStyle style = new GUIStyle(GUI.skin.label) { fontSize = 22, wordWrap = true };
-        GUILayout.BeginArea(new Rect(390, 565, 500, 60), GUI.skin.box);
-        GUILayout.Label(prompt, style);
-        GUILayout.EndArea();
+        CozyOverlayGUI.Draw(prompt, 600f, 620f);
         GUI.matrix = previousMatrix;
     }
 }
