@@ -35,9 +35,29 @@ public class PrinterCleanupTask : MonoBehaviour
         }
     }
 
+    public bool IsAwaitingDelivery => isActiveAndEnabled && initialized &&
+        !completed && collectedCount == loosePapers.Length;
+
     private bool CanInteract => initialized && player != null &&
         !CozyGameMenu.BlocksGameplay &&
         (playerMovement == null || playerMovement.isActiveAndEnabled);
+
+    public CozyFocusHighlighter.Candidate GetFocusCandidate()
+    {
+        if (!isActiveAndEnabled || !CanInteract || completed) return default;
+        nearbyPaperIndex = FindNearestPaper();
+        if (nearbyPaperIndex >= 0)
+        {
+            GameObject paper = loosePapers[nearbyPaperIndex];
+            return new CozyFocusHighlighter.Candidate(this, paper,
+                HorizontalDistance(paper.transform.position), 20);
+        }
+        if (collectedCount == loosePapers.Length &&
+            HorizontalDistance(deliveryPoint.position) <= interactionDistance)
+            return new CozyFocusHighlighter.Candidate(this, null,
+                HorizontalDistance(deliveryPoint.position), 20);
+        return default;
+    }
 
     private void Start()
     {
@@ -70,7 +90,8 @@ public class PrinterCleanupTask : MonoBehaviour
         if (!CanInteract || completed) return;
         nearbyPaperIndex = FindNearestPaper();
         Keyboard keyboard = Keyboard.current;
-        if (keyboard == null || !keyboard.tKey.wasPressedThisFrame) return;
+        if (keyboard == null || !keyboard.tKey.wasPressedThisFrame ||
+            !CozyFocusHighlighter.AllowsTask(this)) return;
         if (collectedCount < loosePapers.Length)
         {
             if (nearbyPaperIndex >= 0) CollectPaper(nearbyPaperIndex);
@@ -126,7 +147,7 @@ public class PrinterCleanupTask : MonoBehaviour
 
     private void OnGUI()
     {
-        if (!CanInteract || completed) return;
+        if (!CanInteract || completed || !CozyFocusHighlighter.AllowsTask(this)) return;
         string prompt = "";
         if (collectedCount == loosePapers.Length &&
             HorizontalDistance(deliveryPoint.position) <= interactionDistance)

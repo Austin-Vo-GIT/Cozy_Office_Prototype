@@ -24,6 +24,7 @@ public class CozyDeskOrganizer : MonoBehaviour
     private void LateUpdate()
     {
         hoveredItem = null;
+        CozyFocusHighlighter.SetDeskTarget(null);
         if (PlayerWorkspaceShop.PointerOverPurchasePanel()) return;
         if (CozyGameMenu.BlocksGameplay || !Application.isFocused ||
             deskSeat == null || !deskSeat.CanInteractWithDesk) return;
@@ -46,6 +47,7 @@ public class CozyDeskOrganizer : MonoBehaviour
             hoveredItem.Straighten();
             hoveredItem = null;
         }
+        CozyFocusHighlighter.SetDeskTarget(hoveredItem != null ? hoveredItem.gameObject : null);
     }
 
     private bool BelongsToThisDesk(CozyDeskItem item)

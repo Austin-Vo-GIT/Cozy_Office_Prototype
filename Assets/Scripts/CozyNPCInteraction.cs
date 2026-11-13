@@ -26,6 +26,29 @@ public class CozyNPCInteraction : MonoBehaviour
     private TaskStage stage = TaskStage.NotStarted;
     private bool dialogueOpen;
     public string Objective => GetObjective();
+    public bool IsAwaitingDelivery => isActiveAndEnabled &&
+        stage == TaskStage.DeliverPaperwork;
+
+    public CozyFocusHighlighter.Candidate GetFocusCandidate()
+    {
+        if (!isActiveAndEnabled || player == null || CozyGameMenu.BlocksGameplay)
+            return default;
+        PlayerPrototype movement = player.GetComponent<PlayerPrototype>();
+        if (movement != null && !movement.isActiveAndEnabled) return default;
+        if (dialogueOpen && IsNear(transform))
+            return new CozyFocusHighlighter.Candidate(this, null, 0f, 100);
+        if (stage == TaskStage.CollectPaperwork && paperwork != null
+            && paperwork.activeInHierarchy && IsNear(paperwork.transform))
+            return new CozyFocusHighlighter.Candidate(this, paperwork,
+                Vector3.Distance(player.position, paperwork.transform.position), 20);
+        if (stage == TaskStage.DeliverPaperwork && IsNear(deliveryPoint))
+            return new CozyFocusHighlighter.Candidate(this, null,
+                Vector3.Distance(player.position, deliveryPoint.position), 20);
+        if (IsNear(transform))
+            return new CozyFocusHighlighter.Candidate(this, null,
+                Vector3.Distance(player.position, transform.position), 10);
+        return default;
+    }
 
     private void Start()
     {
@@ -72,7 +95,8 @@ public class CozyNPCInteraction : MonoBehaviour
             dialogueOpen = false;
             return;
         }
-        if (!keyboard.tKey.wasPressedThisFrame) return;
+        if (!keyboard.tKey.wasPressedThisFrame ||
+            !CozyFocusHighlighter.AllowsTask(this)) return;
         if (dialogueOpen)
         {
             if (stage == TaskStage.NotStarted) stage = TaskStage.CollectPaperwork;
@@ -80,7 +104,7 @@ public class CozyNPCInteraction : MonoBehaviour
             return;
         }
         if (stage == TaskStage.CollectPaperwork &&
-            paperwork != null && IsNear(paperwork.transform))
+            paperwork != null && paperwork.activeInHierarchy && IsNear(paperwork.transform))
         {
             paperwork.SetActive(false);
             PlayPaperworkSound();
@@ -129,7 +153,7 @@ public class CozyNPCInteraction : MonoBehaviour
     private string GetPrompt()
     {
         if (stage == TaskStage.CollectPaperwork &&
-            paperwork != null && IsNear(paperwork.transform))
+            paperwork != null && paperwork.activeInHierarchy && IsNear(paperwork.transform))
             return "T: Pick up paperwork";
         if (stage == TaskStage.DeliverPaperwork && IsNear(deliveryPoint))
             return "T: Deliver paperwork";
@@ -139,7 +163,8 @@ public class CozyNPCInteraction : MonoBehaviour
 
     private void OnGUI()
     {
-        if (CozyGameMenu.BlocksGameplay || player == null) return;
+        if (CozyGameMenu.BlocksGameplay || player == null ||
+            !CozyFocusHighlighter.AllowsTask(this)) return;
         Matrix4x4 previousMatrix = GUI.matrix;
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,
             new Vector3(Screen.width / 1280f, Screen.height / 720f, 1f));
