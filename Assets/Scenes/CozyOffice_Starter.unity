@@ -16120,7 +16120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CozyChairMovementSound
   movementAudioSource: {fileID: 2008776906}
   movementLoop: {fileID: 8300000, guid: a4b17117337da4fe7b2641449ac2327f, type: 3}
-  maximumVolume: 0.35
+  maximumVolume: 0.2
   startSpeed: 0.06
   stopSpeed: 0.025
   fullVolumeSpeed: 1.2
@@ -19336,6 +19336,135 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834579626}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &836303440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836303441}
+  - component: {fileID: 836303442}
+  m_Layer: 3
+  m_Name: FootstepAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836303441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836303440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 800278720}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &836303442
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836303440}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &842879834
 GameObject:
   m_ObjectHideFlags: 0
@@ -28055,7 +28184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CozyChairMovementSound
   movementAudioSource: {fileID: 1733771589}
   movementLoop: {fileID: 8300000, guid: a4b17117337da4fe7b2641449ac2327f, type: 3}
-  maximumVolume: 0.35
+  maximumVolume: 0.2
   startSpeed: 0.06
   stopSpeed: 0.025
   fullVolumeSpeed: 1.2
@@ -28581,7 +28710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CozyChairMovementSound
   movementAudioSource: {fileID: 1302698897}
   movementLoop: {fileID: 8300000, guid: a4b17117337da4fe7b2641449ac2327f, type: 3}
-  maximumVolume: 0.35
+  maximumVolume: 0.2
   startSpeed: 0.06
   stopSpeed: 0.025
   fullVolumeSpeed: 1.2
@@ -32951,7 +33080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CozyChairMovementSound
   movementAudioSource: {fileID: 198635445}
   movementLoop: {fileID: 8300000, guid: a4b17117337da4fe7b2641449ac2327f, type: 3}
-  maximumVolume: 1
+  maximumVolume: 0.2
   startSpeed: 0.06
   stopSpeed: 0.025
   fullVolumeSpeed: 1.2
@@ -34612,7 +34741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CozyChairMovementSound
   movementAudioSource: {fileID: 883285237}
   movementLoop: {fileID: 8300000, guid: a4b17117337da4fe7b2641449ac2327f, type: 3}
-  maximumVolume: 0.35
+  maximumVolume: 0.2
   startSpeed: 0.06
   stopSpeed: 0.025
   fullVolumeSpeed: 1.2
@@ -46198,7 +46327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CozyChairMovementSound
   movementAudioSource: {fileID: 388445776}
   movementLoop: {fileID: 8300000, guid: a4b17117337da4fe7b2641449ac2327f, type: 3}
-  maximumVolume: 0.35
+  maximumVolume: 0.2
   startSpeed: 0.06
   stopSpeed: 0.025
   fullVolumeSpeed: 1.2
@@ -48719,6 +48848,42 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: runLeftFoot
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a42b47e439ce475ab6e6573b4dbdd7e, type: 3}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: runRightFoot
+      value: 
+      objectReference: {fileID: 8300000, guid: 7eeb34cf2389f4c7a87d34e94a7c5b65, type: 3}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: walkLeftFoot
+      value: 
+      objectReference: {fileID: 8300000, guid: e40e79a12649c4575a6fd71ed0f97195, type: 3}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: walkRightFoot
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e26b683bd51e46b1be134f9d9574624, type: 3}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: runStepInterval
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: walkStepInterval
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: runFootstepVolume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: walkFootstepVolume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203563235809127806, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      propertyPath: footstepAudioSource
+      value: 
+      objectReference: {fileID: 836303442}
     - target: {fileID: 4230411617699045627, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -48933,6 +49098,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4653178178875981391, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1775190451}
+    - targetCorrespondingSourceObject: {fileID: 4653178178875981391, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 836303441}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d273972d694814818b3bff6d04f7c9b2, type: 3}
 --- !u!1 &2065829814
