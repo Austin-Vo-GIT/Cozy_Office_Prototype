@@ -34,6 +34,9 @@ public class CozyDeskItem : MonoBehaviour
     private bool moving;
     private bool tidy;
 
+    // True only after the motion finishes, not merely when clicking is disabled.
+    public bool IsTidy => tidy && !moving;
+
     public string ItemName => itemName;
     public string ActionText => actionText;
 
