@@ -753,9 +753,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b975e5f655340b7498f3715f94bec7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::vehicleMovement
-  moveSpeed: 20
+  moveSpeed: 15
   maxDistance: 25
   useLocalForward: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  heightOffset: 0
+  raycastCheckDistance: 4
+  alignToSlope: 1
+  rotationSmoothSpeed: 15
 --- !u!1001 &428736085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1439,6 +1446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_Road_11
       objectReference: {fileID: 0}
+    - target: {fileID: 8526041334139560285, guid: 1a7fc64c9ad4a094c8b286cd73a46720, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1455,6 +1466,10 @@ PrefabInstance:
     - target: {fileID: 3701639384317875236, guid: cb21517513713e24ea6396f4e7c7ef29, type: 3}
       propertyPath: m_Name
       value: SM_Floor_Road_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3701639384317875236, guid: cb21517513713e24ea6396f4e7c7ef29, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8646305867422500691, guid: cb21517513713e24ea6396f4e7c7ef29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1917,6 +1932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Floor_Road_01_L
       objectReference: {fileID: 0}
+    - target: {fileID: 3909433098384231574, guid: a13a19d48febd3d4890d3a57842a49c7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7181881752591483237, guid: a13a19d48febd3d4890d3a57842a49c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24
@@ -2040,6 +2059,10 @@ PrefabInstance:
     - target: {fileID: 220369596081830500, guid: fffedb97c414dd94abbaaf90624892d4, type: 3}
       propertyPath: m_Name
       value: SM_Floor_Road_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 220369596081830500, guid: fffedb97c414dd94abbaaf90624892d4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8025868820831044795, guid: fffedb97c414dd94abbaaf90624892d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2870,23 +2893,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9848078
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.17364825
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2894,11 +2917,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6323053888853057543, guid: e39f405efb6ba4042ba29afe46bb3a73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
