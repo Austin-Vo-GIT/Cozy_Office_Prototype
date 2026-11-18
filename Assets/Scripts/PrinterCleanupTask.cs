@@ -9,6 +9,10 @@ public class PrinterCleanupTask : MonoBehaviour
     [SerializeField] private GameObject[] loosePapers;
     [SerializeField] private Transform deliveryPoint;
     [SerializeField] private GameObject completedStack;
+    [Header("Rapport Reward")]
+    [SerializeField] private CozyRapport rapport;
+    [SerializeField, Min(1)] private int cleanupRapportReward = 10;
+
     [Header("Interaction")]
     [SerializeField, Min(0.1f)] private float interactionDistance = 1.2f;
     [Header("Paper Audio")]
@@ -78,6 +82,9 @@ public class PrinterCleanupTask : MonoBehaviour
                 return;
             }
         }
+        if (rapport == null)
+            Debug.LogWarning("PrinterCleanupTask: Assign RapportSystem to the Rapport field to award points.", this);
+
         playerMovement = player.GetComponent<PlayerPrototype>();
         collected = new bool[loosePapers.Length];
         completedStack.SetActive(false);
@@ -102,6 +109,12 @@ public class PrinterCleanupTask : MonoBehaviour
             completed = true;
             completedStack.SetActive(true);
             PlayPaperSound();
+
+            // Award only on delivery, never while picking up individual sheets.
+            // The shared Rapport system also prevents duplicate task rewards.
+            if (rapport != null)
+                rapport.TryAwardOnce("printer-cleanup", cleanupRapportReward,
+                    "Printer cleanup complete!");
         }
     }
 

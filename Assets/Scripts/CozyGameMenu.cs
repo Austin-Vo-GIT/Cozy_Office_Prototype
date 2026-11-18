@@ -12,6 +12,10 @@ public class CozyGameMenu : MonoBehaviour
     [SerializeField] private CozyDeskSeat deskSeat;
     [SerializeField] private CanvasGroup computerDesktop;
 
+    [Header("Rapport")]
+    [SerializeField] private CozyRapport rapport;
+    [SerializeField] private CozyDeskOrganizer deskOrganizer;
+
     [Header("Optional Menu Click Sound")]
     [SerializeField] private AudioSource menuAudioSource;
     [SerializeField] private AudioClip menuClickSound;
@@ -134,11 +138,14 @@ public class CozyGameMenu : MonoBehaviour
             GUI.color = Color.white;
             GUILayout.BeginArea(new Rect(270, 55, 740, 600));
             GUILayout.Label(shopPage ? "Cubicle Shop" : "First Day Tasks:", title);
+            GUILayout.Label(rapport != null
+                ? $"Rapport Points: {rapport.Balance}"
+                : "Rapport Points: Assign Rapport on GameMenu", label);
             GUILayout.Space(12);
             if (shopPage)
             {
                 catalogScroll = GUILayout.BeginScrollView(catalogScroll,
-                    GUILayout.Height(400));
+                    GUILayout.Height(360));
                 if (workspaceShop != null)
                     workspaceShop.DrawMainMenuCatalog(label, button);
                 else
@@ -148,7 +155,7 @@ public class CozyGameMenu : MonoBehaviour
             else
             {
                 scrollPosition = GUILayout.BeginScrollView(scrollPosition,
-                    GUILayout.Height(400));
+                    GUILayout.Height(360));
             GUILayout.Label("Special Delivery - Talk to your coworker.", label);
             GUILayout.Label("Printer Cleanup - The printer broke again.", label);
             GUILayout.Label("Inbox Cleanup - Check your computer.", label);
@@ -165,6 +172,9 @@ public class CozyGameMenu : MonoBehaviour
                 if (workspaceShop != null)
                     GUILayout.Label("Inbox Cleanup: " +
                         (workspaceShop.InboxCompleted ? "Complete" : "Check your computer."), label);
+                if (deskOrganizer != null)
+                    GUILayout.Label("Desk Organization: " +
+                        (deskOrganizer.OrganizationCompleted ? "Complete" : "Straighten your desk and close the drawer."), label);
                 GUILayout.Space(15);
             }
 

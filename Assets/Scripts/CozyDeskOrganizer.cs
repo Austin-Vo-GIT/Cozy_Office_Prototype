@@ -8,6 +8,13 @@ public class CozyDeskOrganizer : MonoBehaviour
     [SerializeField] private CozyDeskSeat deskSeat;
     [SerializeField] private Camera gameCamera;
     [SerializeField] private CozyDeskItem[] deskItems;
+    [Header("Rapport Reward")]
+    [SerializeField] private CozyRapport rapport;
+    [SerializeField, Min(1)] private int organizationReward = 10;
+    private bool completionArmed;
+    private bool organizationCompleted;
+    public bool OrganizationCompleted => organizationCompleted;
+
     [Header("Interaction")]
     [SerializeField, Min(0.1f)] private float interactionRange = 3f;
     private CozyDeskItem hoveredItem;
@@ -18,11 +25,21 @@ public class CozyDeskOrganizer : MonoBehaviour
         {
             Debug.LogError("CozyDeskOrganizer: Assign Desk Seat and Game Camera.", this);
             enabled = false;
+            return;
         }
+        if (rapport == null)
+            Debug.LogWarning("CozyDeskOrganizer: Assign Rapport to award points.", this);
+        if (deskItems == null || deskItems.Length == 0)
+            Debug.LogWarning("CozyDeskOrganizer: Add all desk items, including the drawer.", this);
+        else
+            foreach (CozyDeskItem item in deskItems)
+                if (item == null)
+                    Debug.LogWarning("CozyDeskOrganizer: A Desk Items entry is missing; completion is blocked.", this);
     }
 
     private void LateUpdate()
     {
+        CheckOrganizationCompletion();
         hoveredItem = null;
         CozyFocusHighlighter.SetDeskTarget(null);
         if (PlayerWorkspaceShop.PointerOverPurchasePanel()) return;
@@ -48,6 +65,27 @@ public class CozyDeskOrganizer : MonoBehaviour
             hoveredItem = null;
         }
         CozyFocusHighlighter.SetDeskTarget(hoveredItem != null ? hoveredItem.gameObject : null);
+    }
+
+    private void CheckOrganizationCompletion()
+    {
+        if (organizationCompleted || deskItems == null || deskItems.Length == 0) return;
+        bool allTidy = true;
+        foreach (CozyDeskItem item in deskItems)
+        {
+            // Missing or inactive unfinished items must never count as completed.
+            if (item == null) return;
+            if (!item.IsTidy) allTidy = false;
+        }
+        if (!allTidy)
+        {
+            completionArmed = true;
+            return;
+        }
+        // An already tidy desk at scene startup does not give free points.
+        if (!completionArmed || rapport == null || !rapport.isActiveAndEnabled) return;
+        rapport.TryAwardOnce("desk-organization", organizationReward, "Desk organized!");
+        organizationCompleted = true;
     }
 
     private bool BelongsToThisDesk(CozyDeskItem item)
