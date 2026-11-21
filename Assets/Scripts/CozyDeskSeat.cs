@@ -78,6 +78,7 @@ public class CozyDeskSeat : MonoBehaviour
     private bool initialized;
     private bool seated;
     private bool usingComputer;
+    private bool returnedFromComputer;
     private bool lookingAround;
 
     private float lookYaw;
@@ -104,6 +105,20 @@ public class CozyDeskSeat : MonoBehaviour
     private GameObject hiddenChair;
     private bool chairWasActive;
     private bool chairStateSaved;
+
+    private void OnEnable() { CozyFocusHighlighter.RegisterSource(this); }
+
+    public CozyFocusHighlighter.Candidate GetFocusCandidate()
+    {
+        if (!isActiveAndEnabled || !initialized || CozyGameMenu.BlocksGameplay ||
+            !Application.isFocused) return default;
+        // Seated controls take exclusive priority over nearby office tasks.
+        if (seated) return new CozyFocusHighlighter.Candidate(this, null, 0f, 200);
+        if (playerMovement == null || !playerMovement.isActiveAndEnabled || !IsAtDesk())
+            return default;
+        return new CozyFocusHighlighter.Candidate(this, null,
+            Vector3.Distance(playerMovement.transform.position, deskInteractionPoint.position), 20);
+    }
 
     private void Start()
     {
@@ -170,57 +185,36 @@ public class CozyDeskSeat : MonoBehaviour
     private void Update()
     {
         if (!initialized) return;
-
-        if (CozyGameMenu.BlocksGameplay)
+        if (CozyGameMenu.BlocksGameplay || !Application.isFocused)
         {
             EndLookAround();
             return;
         }
 
         Keyboard keyboard = Keyboard.current;
-
-        if (!Application.isFocused)
-        {
-            EndLookAround();
-            return;
-        }
-
         if (seated)
         {
-            if (usingComputer)
+            if (keyboard != null && keyboard.escapeKey.wasPressedThisFrame)
             {
-                if (keyboard != null &&
-                    (keyboard.escapeKey.wasPressedThisFrame ||
-                     keyboard.fKey.wasPressedThisFrame))
-                {
-                    CloseComputer();
-                }
-
+                if (usingComputer) CloseComputer();
+                else StandUp();
                 return;
             }
 
-            if (keyboard != null &&
-                (keyboard.fKey.wasPressedThisFrame ||
-                 keyboard.escapeKey.wasPressedThisFrame))
+            if (CozyFocusHighlighter.TryInteract(this))
             {
-                StandUp();
+                if (usingComputer) CloseComputer();
+                else if (returnedFromComputer || computerViewPoint == null || desktop == null)
+                    StandUp();
+                else OpenComputer();
                 return;
             }
 
-            if (keyboard != null && keyboard.cKey.wasPressedThisFrame)
-            {
-                OpenComputer();
-                return;
-            }
-
-            UpdateSeatedLook();
+            if (!usingComputer) UpdateSeatedLook();
             return;
         }
 
-        if (keyboard != null && IsAtDesk() && keyboard.fKey.wasPressedThisFrame)
-        {
-            SitDown();
-        }
+        if (CozyFocusHighlighter.TryInteract(this)) SitDown();
     }
 
     private void UpdateSeatedLook()
@@ -321,6 +315,7 @@ public class CozyDeskSeat : MonoBehaviour
         lookYaw = 0f;
         lookPitch = 0f;
         seated = true;
+        returnedFromComputer = false;
 
         HideDeskChair();
         PlaySeatSound(sitDownSound);
@@ -441,6 +436,7 @@ public class CozyDeskSeat : MonoBehaviour
         if (!usingComputer) return;
 
         usingComputer = false;
+        returnedFromComputer = true;
 
         if (desktop != null)
         {
@@ -592,12 +588,14 @@ public class CozyDeskSeat : MonoBehaviour
     {
         // Restore the chair and player without playing a sound
         // when the component is disabled or Play Mode ends.
+        CozyFocusHighlighter.UnregisterSource(this);
         StandUp(false);
     }
 
     private void OnGUI()
     {
         if (!initialized || CozyGameMenu.BlocksGameplay) return;
+        if (!Application.isFocused || !CozyFocusHighlighter.AllowsTask(this)) return;
         if (!seated && !IsAtDesk()) return;
 
         Matrix4x4 previousMatrix = GUI.matrix;
@@ -616,19 +614,18 @@ public class CozyDeskSeat : MonoBehaviour
 
         if (usingComputer)
         {
-            instructions = "Esc or F: Return to seated view";
+            instructions = "I or Esc: Return to seated view";
         }
         else if (seated)
         {
-            instructions = enableSeatedLook
-                ? "Hold right mouse: Look around\n" +
-                  "C: Use computer\n" +
-                  "F or Esc: Stand up"
-                : "C: Use computer\nF or Esc: Stand up";
+            string action = returnedFromComputer || computerViewPoint == null || desktop == null
+                ? "I or Esc: Stand up"
+                : "I: Use computer\nEsc: Stand up";
+            instructions = (enableSeatedLook ? "Hold right mouse: Look around\n" : "") + action;
         }
         else
         {
-            instructions = "F: Sit at your desk";
+            instructions = "I: Sit at your desk";
         }
 
         CozyOverlayGUI.Draw(

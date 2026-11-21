@@ -69,6 +69,10 @@ public class CabinetCleanupTask : MonoBehaviour
         }
     }
 
+    private void OnEnable() { CozyFocusHighlighter.RegisterSource(this); }
+
+    private void OnDisable() { CozyFocusHighlighter.UnregisterSource(this); }
+
     private void Start()
     {
         bool valid = playerMovement != null && interactionPoint != null &&
@@ -188,8 +192,7 @@ public class CabinetCleanupTask : MonoBehaviour
             rewardHandled = true;
         }
         if (!CanInteract || Keyboard.current == null ||
-            !Keyboard.current.tKey.wasPressedThisFrame ||
-            !CozyFocusHighlighter.AllowsTask(this) || GetFocusCandidate().owner == null) return;
+            !CozyFocusHighlighter.TryInteract(this)) return;
         switch (stage)
         {
             case Stage.NotStarted:
@@ -256,10 +259,10 @@ public class CabinetCleanupTask : MonoBehaviour
         string prompt;
         switch (stage)
         {
-            case Stage.Collecting: prompt = $"T: Collect binder ({collectedCount}/3 collected)"; break;
-            case Stage.ReadyToPlace: prompt = "T: Organize all 3 binders on the top shelf"; break;
-            case Stage.ReadyToClose: prompt = "T: Close cabinet and finish cleanup"; break;
-            default: prompt = "T: Open cabinet"; break;
+            case Stage.Collecting: prompt = $"I: Collect binder ({collectedCount}/3 collected)"; break;
+            case Stage.ReadyToPlace: prompt = "I: Organize all 3 binders on the top shelf"; break;
+            case Stage.ReadyToClose: prompt = "I: Close cabinet and finish cleanup"; break;
+            default: prompt = "I: Open cabinet"; break;
         }
         Matrix4x4 previous = GUI.matrix;
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,

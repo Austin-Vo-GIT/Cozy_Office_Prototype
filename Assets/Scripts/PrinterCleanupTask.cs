@@ -63,6 +63,10 @@ public class PrinterCleanupTask : MonoBehaviour
         return default;
     }
 
+    private void OnEnable() { CozyFocusHighlighter.RegisterSource(this); }
+
+    private void OnDisable() { CozyFocusHighlighter.UnregisterSource(this); }
+
     private void Start()
     {
         if (player == null || deliveryPoint == null || completedStack == null ||
@@ -97,8 +101,7 @@ public class PrinterCleanupTask : MonoBehaviour
         if (!CanInteract || completed) return;
         nearbyPaperIndex = FindNearestPaper();
         Keyboard keyboard = Keyboard.current;
-        if (keyboard == null || !keyboard.tKey.wasPressedThisFrame ||
-            !CozyFocusHighlighter.AllowsTask(this)) return;
+        if (keyboard == null || !CozyFocusHighlighter.TryInteract(this)) return;
         if (collectedCount < loosePapers.Length)
         {
             if (nearbyPaperIndex >= 0) CollectPaper(nearbyPaperIndex);
@@ -164,8 +167,8 @@ public class PrinterCleanupTask : MonoBehaviour
         string prompt = "";
         if (collectedCount == loosePapers.Length &&
             HorizontalDistance(deliveryPoint.position) <= interactionDistance)
-            prompt = "T: Place the paper stack";
-        else if (nearbyPaperIndex >= 0) prompt = "T: Collect paper";
+            prompt = "I: Place the paper stack";
+        else if (nearbyPaperIndex >= 0) prompt = "I: Collect paper";
         if (string.IsNullOrEmpty(prompt)) return;
 
         Matrix4x4 previousMatrix = GUI.matrix;

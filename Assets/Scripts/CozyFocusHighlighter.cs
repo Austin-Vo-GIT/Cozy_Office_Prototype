@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.InputSystem;
 
-// Select T interactions before gameplay Update; draw after desk hover LateUpdate.
+// Select I interactions before gameplay Update; draw after desk hover LateUpdate.
 [DefaultExecutionOrder(-500)]
 [RequireComponent(typeof(CozyFocusPresenter))]
 public class CozyFocusHighlighter : MonoBehaviour
@@ -33,6 +34,10 @@ public class CozyFocusHighlighter : MonoBehaviour
     [SerializeField, Range(1f, 10f)] private float glowBrightness = 4f;
 
     private static CozyFocusHighlighter instance;
+    private static readonly List<MonoBehaviour> sources = new List<MonoBehaviour>();
+    private static Candidate inputSelection;
+    private static int selectionFrame = -1;
+    private static int consumedFrame = -1;
     private Candidate selected;
     private GameObject deskTarget;
     private int deskFrame = -1;
@@ -45,7 +50,67 @@ public class CozyFocusHighlighter : MonoBehaviour
     private bool ready;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-    private static void ResetStatics() { instance = null; }
+    private static void ResetStatics()
+    {
+        instance = null;
+        sources.Clear();
+        inputSelection = default;
+        selectionFrame = -1;
+        consumedFrame = -1;
+    }
+
+    public static void RegisterSource(MonoBehaviour source)
+    {
+        if (source != null && !sources.Contains(source)) sources.Add(source);
+    }
+
+    public static void UnregisterSource(MonoBehaviour source) { sources.Remove(source); }
+
+    private static Candidate CandidateFor(MonoBehaviour source)
+    {
+        if (source == null || !source.isActiveAndEnabled) return default;
+        if (source is CozyNPCInteraction npc) return npc.GetFocusCandidate();
+        if (source is PrinterCleanupTask printer) return printer.GetFocusCandidate();
+        if (source is CabinetCleanupTask cabinet) return cabinet.GetFocusCandidate();
+        if (source is CozyDeskSeat seat) return seat.GetFocusCandidate();
+        if (source is CozyDoorInteraction door) return door.GetFocusCandidate();
+        return default;
+    }
+
+    private static Candidate SelectCandidate()
+    {
+        Candidate best = default;
+        if (CozyGameMenu.BlocksGameplay || !Application.isFocused) return best;
+        foreach (MonoBehaviour source in sources)
+        {
+            Candidate candidate = CandidateFor(source);
+            if (candidate.owner == null) continue;
+            if (best.owner == null || candidate.priority > best.priority ||
+                (candidate.priority == best.priority && candidate.distance < best.distance))
+                best = candidate;
+        }
+        return best;
+    }
+
+    private static void PrepareInputSelection()
+    {
+        if (selectionFrame == Time.frameCount) return;
+        selectionFrame = Time.frameCount;
+        inputSelection = SelectCandidate();
+    }
+
+    // Snapshot the winner once per frame; a state change cannot redirect the same keypress.
+    public static bool TryInteract(MonoBehaviour owner)
+    {
+        if (owner == null || !owner.isActiveAndEnabled ||
+            CozyGameMenu.BlocksGameplay || !Application.isFocused ||
+            Keyboard.current == null || !Keyboard.current.iKey.wasPressedThisFrame ||
+            consumedFrame == Time.frameCount) return false;
+        PrepareInputSelection();
+        if (inputSelection.owner != owner || CandidateFor(owner).owner != owner) return false;
+        consumedFrame = Time.frameCount;
+        return true;
+    }
 
     private void OnEnable()
     {
@@ -56,6 +121,10 @@ public class CozyFocusHighlighter : MonoBehaviour
             return;
         }
         instance = this;
+        // Preserve existing Inspector links; all updated scene instances also register themselves.
+        RegisterSource(coworkerTask);
+        RegisterSource(printerTask);
+        RegisterSource(cabinetTask);
         if (maskShader == null) maskShader = Shader.Find("CozyOffice/FocusMask");
         if (edgeShader == null) edgeShader = Shader.Find("CozyOffice/FocusEdge");
         ready = maskShader != null && edgeShader != null
@@ -71,11 +140,14 @@ public class CozyFocusHighlighter : MonoBehaviour
         RefreshMaterials();
     }
 
-    // With no coordinator installed, existing task behavior remains available.
+    // Prompts share the same winner even when the visual highlighter is disabled.
     public static bool AllowsTask(MonoBehaviour owner)
     {
-        return instance == null || !instance.isActiveAndEnabled
-            || instance.selected.owner == owner;
+        if (owner == null || !owner.isActiveAndEnabled ||
+            CozyGameMenu.BlocksGameplay || !Application.isFocused) return false;
+        return instance != null && instance.isActiveAndEnabled
+            ? instance.selected.owner == owner
+            : SelectCandidate().owner == owner;
     }
 
     public static void SetDeskTarget(GameObject target)
@@ -85,24 +157,13 @@ public class CozyFocusHighlighter : MonoBehaviour
         instance.deskFrame = Time.frameCount;
     }
 
-    private void ChooseTask()
-    {
-        selected = default;
-        if (CozyGameMenu.BlocksGameplay || !Application.isFocused) return;
-        if (coworkerTask != null) Consider(coworkerTask.GetFocusCandidate());
-        if (printerTask != null) Consider(printerTask.GetFocusCandidate());
-        if (cabinetTask != null) Consider(cabinetTask.GetFocusCandidate());
-    }
+    private void ChooseTask() { selected = SelectCandidate(); }
 
-    private void Consider(Candidate candidate)
+    private void Update()
     {
-        if (candidate.owner == null) return;
-        if (selected.owner == null || candidate.priority > selected.priority
-            || (candidate.priority == selected.priority && candidate.distance < selected.distance))
-            selected = candidate;
+        PrepareInputSelection();
+        selected = inputSelection;
     }
-
-    private void Update() { ChooseTask(); }
 
     // Called by the late presenter, after all interaction scripts have updated.
     public void PresentFocus()
@@ -148,7 +209,8 @@ public class CozyFocusHighlighter : MonoBehaviour
         foreach (MeshFilter filter in filters)
         {
             MeshRenderer source = filter.GetComponent<MeshRenderer>();
-            if (source == null || filter.sharedMesh == null) continue;
+            if (source == null || filter.sharedMesh == null ||
+                (filter.gameObject.hideFlags & HideFlags.DontSave) != 0) continue;
             AddCopy(filter, source, maskMaterial);
             foreach (Material material in edgeMaterials) AddCopy(filter, source, material);
         }

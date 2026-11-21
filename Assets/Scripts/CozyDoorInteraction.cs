@@ -48,6 +48,7 @@ public class CozyDoorInteraction : MonoBehaviour
     private void OnEnable()
     {
         if (!doors.Contains(this)) doors.Add(this);
+        CozyFocusHighlighter.RegisterSource(this);
     }
 
     private void Start()
@@ -66,34 +67,21 @@ public class CozyDoorInteraction : MonoBehaviour
         && interactionPoint != null && !CozyGameMenu.BlocksGameplay
         && Application.isFocused;
 
-    private static CozyDoorInteraction NearestDoor()
+    public CozyFocusHighlighter.Candidate GetFocusCandidate()
     {
-        CozyDoorInteraction nearest = null;
-        float best = float.PositiveInfinity;
-        foreach (CozyDoorInteraction door in doors)
-        {
-            if (door == null || !door.CanInteract) continue;
-            Vector3 delta = door.playerMovement.transform.position
-                - door.interactionPoint.position;
-            // Interaction marker sits at floor height; ignore character pivot height.
-            float verticalDistance = Mathf.Abs(delta.y);
-            delta.y = 0f;
-            float distance = delta.sqrMagnitude;
-            if (verticalDistance <= 2f &&
-                distance <= door.interactionDistance * door.interactionDistance &&
-                distance < best)
-            {
-                best = distance;
-                nearest = door;
-            }
-        }
-        return nearest;
+        if (!CanInteract) return default;
+        Vector3 delta = playerMovement.transform.position - interactionPoint.position;
+        if (Mathf.Abs(delta.y) > 2f) return default;
+        delta.y = 0f;
+        float distance = delta.magnitude;
+        if (distance > interactionDistance) return default;
+        return new CozyFocusHighlighter.Candidate(this, gameObject, distance, 20);
     }
 
     private void Update()
     {
         if (!CanInteract || Keyboard.current == null) return;
-        if (Keyboard.current.oKey.wasPressedThisFrame && NearestDoor() == this)
+        if (CozyFocusHighlighter.TryInteract(this))
         {
             open = !open;
             closeSoundPending = false;
@@ -139,19 +127,24 @@ public class CozyDoorInteraction : MonoBehaviour
 
     private void OnGUI()
     {
-        if (!CanInteract || NearestDoor() != this) return;
+        if (!CanInteract || GetFocusCandidate().owner == null ||
+            !CozyFocusHighlighter.AllowsTask(this)) return;
         Matrix4x4 previous = GUI.matrix;
         try
         {
             GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,
                 new Vector3(Screen.width / 1280f, Screen.height / 720f, 1f));
-            CozyOverlayGUI.Draw("O: " + (open ? "Close " : "Open ") + doorName,
+            CozyOverlayGUI.Draw("I: " + (open ? "Close " : "Open ") + doorName,
                 500f, 540f, false);
         }
         finally { GUI.matrix = previous; }
     }
 
-    private void OnDisable() { doors.Remove(this); }
+    private void OnDisable()
+    {
+        doors.Remove(this);
+        CozyFocusHighlighter.UnregisterSource(this);
+    }
 
     private void OnDrawGizmosSelected()
     {

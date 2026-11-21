@@ -50,6 +50,8 @@ public class CozyNPCInteraction : MonoBehaviour
         return default;
     }
 
+    private void OnEnable() { CozyFocusHighlighter.RegisterSource(this); }
+
     private void Start()
     {
         if (player == null || paperwork == null || deliveryPoint == null)
@@ -86,7 +88,7 @@ public class CozyNPCInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (CozyGameMenu.BlocksGameplay || player == null) return;
+        if (CozyGameMenu.BlocksGameplay || !Application.isFocused || player == null) return;
         if (dialogueOpen && !IsNear(transform)) dialogueOpen = false;
         Keyboard keyboard = Keyboard.current;
         if (keyboard == null) return;
@@ -95,8 +97,7 @@ public class CozyNPCInteraction : MonoBehaviour
             dialogueOpen = false;
             return;
         }
-        if (!keyboard.tKey.wasPressedThisFrame ||
-            !CozyFocusHighlighter.AllowsTask(this)) return;
+        if (!CozyFocusHighlighter.TryInteract(this)) return;
         if (dialogueOpen)
         {
             if (stage == TaskStage.NotStarted) stage = TaskStage.CollectPaperwork;
@@ -154,10 +155,10 @@ public class CozyNPCInteraction : MonoBehaviour
     {
         if (stage == TaskStage.CollectPaperwork &&
             paperwork != null && paperwork.activeInHierarchy && IsNear(paperwork.transform))
-            return "T: Pick up paperwork";
+            return "I: Pick up paperwork";
         if (stage == TaskStage.DeliverPaperwork && IsNear(deliveryPoint))
-            return "T: Deliver paperwork";
-        if (IsNear(transform)) return "T: Talk";
+            return "I: Deliver paperwork";
+        if (IsNear(transform)) return "I: Talk";
         return "";
     }
 
@@ -171,7 +172,7 @@ public class CozyNPCInteraction : MonoBehaviour
         if (dialogueOpen)
         {
             string instructions = stage == TaskStage.NotStarted
-                ? "T: Accept task     Esc: Not now" : "T or Esc: Close";
+                ? "I: Accept task     Esc: Not now" : "I or Esc: Close";
             string text = coworkerName + "\n\n" + GetDialogue()
                 + "\n\n" + instructions;
             CozyOverlayGUI.Draw(text, 800f, 700f, fixedWidth: true);
@@ -183,7 +184,11 @@ public class CozyNPCInteraction : MonoBehaviour
         GUI.matrix = previousMatrix;
     }
 
-    private void OnDisable() { dialogueOpen = false; }
+    private void OnDisable()
+    {
+        CozyFocusHighlighter.UnregisterSource(this);
+        dialogueOpen = false;
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
