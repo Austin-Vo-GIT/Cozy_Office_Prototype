@@ -41,7 +41,7 @@ public class CozyDeskSeat : MonoBehaviour
     [SerializeField, Range(20f, 90f)]
     private float seatedFieldOfView = 60f;
 
-    [Header("Seated Look - Hold L")]
+    [Header("Seated Look - Hold Right Mouse")]
     [SerializeField] private bool enableSeatedLook = true;
 
     [SerializeField, Range(0.01f, 1f)]
@@ -179,7 +179,7 @@ public class CozyDeskSeat : MonoBehaviour
 
         Keyboard keyboard = Keyboard.current;
 
-        if (!Application.isFocused || keyboard == null)
+        if (!Application.isFocused)
         {
             EndLookAround();
             return;
@@ -189,8 +189,9 @@ public class CozyDeskSeat : MonoBehaviour
         {
             if (usingComputer)
             {
-                if (keyboard.escapeKey.wasPressedThisFrame ||
-                    keyboard.fKey.wasPressedThisFrame)
+                if (keyboard != null &&
+                    (keyboard.escapeKey.wasPressedThisFrame ||
+                     keyboard.fKey.wasPressedThisFrame))
                 {
                     CloseComputer();
                 }
@@ -198,36 +199,37 @@ public class CozyDeskSeat : MonoBehaviour
                 return;
             }
 
-            if (keyboard.fKey.wasPressedThisFrame ||
-                keyboard.escapeKey.wasPressedThisFrame)
+            if (keyboard != null &&
+                (keyboard.fKey.wasPressedThisFrame ||
+                 keyboard.escapeKey.wasPressedThisFrame))
             {
                 StandUp();
                 return;
             }
 
-            if (keyboard.cKey.wasPressedThisFrame)
+            if (keyboard != null && keyboard.cKey.wasPressedThisFrame)
             {
                 OpenComputer();
                 return;
             }
 
-            UpdateSeatedLook(keyboard);
+            UpdateSeatedLook();
             return;
         }
 
-        if (IsAtDesk() && keyboard.fKey.wasPressedThisFrame)
+        if (keyboard != null && IsAtDesk() && keyboard.fKey.wasPressedThisFrame)
         {
             SitDown();
         }
     }
 
-    private void UpdateSeatedLook(Keyboard keyboard)
+    private void UpdateSeatedLook()
     {
         Mouse mouse = Mouse.current;
 
         if (!enableSeatedLook ||
-            !keyboard.lKey.isPressed ||
-            mouse == null)
+            mouse == null ||
+            !mouse.rightButton.isPressed)
         {
             EndLookAround();
             return;
@@ -619,7 +621,7 @@ public class CozyDeskSeat : MonoBehaviour
         else if (seated)
         {
             instructions = enableSeatedLook
-                ? "Hold L + mouse: Look around\n" +
+                ? "Hold right mouse: Look around\n" +
                   "C: Use computer\n" +
                   "F or Esc: Stand up"
                 : "C: Use computer\nF or Esc: Stand up";

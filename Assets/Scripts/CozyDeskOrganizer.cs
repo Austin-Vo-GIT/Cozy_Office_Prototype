@@ -45,9 +45,8 @@ public class CozyDeskOrganizer : MonoBehaviour
         if (PlayerWorkspaceShop.PointerOverPurchasePanel()) return;
         if (CozyGameMenu.BlocksGameplay || !Application.isFocused ||
             deskSeat == null || !deskSeat.CanInteractWithDesk) return;
-        Keyboard keyboard = Keyboard.current;
         Mouse mouse = Mouse.current;
-        if (mouse == null || (keyboard != null && keyboard.lKey.isPressed)) return;
+        if (mouse == null || mouse.rightButton.isPressed) return;
         if (Cursor.lockState == CursorLockMode.Locked) return;
         Vector2 position = mouse.position.ReadValue();
         if (!gameCamera.pixelRect.Contains(position)) return;

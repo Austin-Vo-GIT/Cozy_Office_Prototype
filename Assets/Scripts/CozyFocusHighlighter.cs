@@ -23,6 +23,7 @@ public class CozyFocusHighlighter : MonoBehaviour
     [Header("Task Sources")]
     [SerializeField] private CozyNPCInteraction coworkerTask;
     [SerializeField] private PrinterCleanupTask printerTask;
+    [SerializeField] private CabinetCleanupTask cabinetTask;
     [Header("Outline Shaders - assign both supplied shader assets")]
     [SerializeField] private Shader maskShader;
     [SerializeField] private Shader edgeShader;
@@ -90,6 +91,7 @@ public class CozyFocusHighlighter : MonoBehaviour
         if (CozyGameMenu.BlocksGameplay || !Application.isFocused) return;
         if (coworkerTask != null) Consider(coworkerTask.GetFocusCandidate());
         if (printerTask != null) Consider(printerTask.GetFocusCandidate());
+        if (cabinetTask != null) Consider(cabinetTask.GetFocusCandidate());
     }
 
     private void Consider(Candidate candidate)

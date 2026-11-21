@@ -8,6 +8,7 @@ public class CozyGameMenu : MonoBehaviour
     [Header("Menu References")]
     [SerializeField] private CozyNPCInteraction coworkerTask;
     [SerializeField] private PrinterCleanupTask printerTask;
+    [SerializeField] private CabinetCleanupTask cabinetTask;
     [SerializeField] private PlayerWorkspaceShop workspaceShop;
     [SerializeField] private CozyDeskSeat deskSeat;
     [SerializeField] private CanvasGroup computerDesktop;
@@ -160,6 +161,7 @@ public class CozyGameMenu : MonoBehaviour
             GUILayout.Label("Printer Cleanup - The printer broke again.", label);
             GUILayout.Label("Inbox Cleanup - Check your computer.", label);
             GUILayout.Label("Desk Organization - Keeps the boss happy.", label);
+            GUILayout.Label("Cabinet Cleanup - Give those binders a proper home.", label);
             GUILayout.Space(20);
 
             if (firstMenuDismissed)
@@ -169,6 +171,8 @@ public class CozyGameMenu : MonoBehaviour
                     GUILayout.Label("Special Delivery: " + coworkerTask.Objective, label);
                 if (printerTask != null)
                     GUILayout.Label("Printer Cleanup: " + printerTask.ProgressSummary, label);
+                if (cabinetTask != null)
+                    GUILayout.Label("Cabinet Cleanup: " + cabinetTask.ProgressSummary, label);
                 if (workspaceShop != null)
                     GUILayout.Label("Inbox Cleanup: " +
                         (workspaceShop.InboxCompleted ? "Complete" : "Check your computer."), label);
